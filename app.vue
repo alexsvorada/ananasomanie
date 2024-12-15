@@ -1,13 +1,7 @@
 <script setup lang="ts">
-	useHead({
-		title: 'Ananaso-Manie.cz - Minecraft Server',
-		meta: [
-			{ name: 'description', content: 'Nejlepší minecraft zážitek začíná zde!' },
-			{ property: 'og:title', content: 'Ananaso-Manie.cz' },
-			{ property: 'og:description', content: 'Nejlepší minecraft zážitek začíná zde!' },
-			{ property: 'og:image', content: '/og-image.jpg' },
-		],
-	})
+	import { useMetadata } from '#build/imports'
+
+	useHead(useMetadata())
 
 	const navItems = [
 		{ name: 'DOMŮ', path: '/' },
@@ -70,7 +64,7 @@
 </script>
 
 <template>
-	<div class="min-h-screen bg-dark text-light scroll-smooth">
+	<main class="min-h-screen bg-dark text-light scroll-smooth">
 		<!-- Navigation -->
 		<nav role="navigation" aria-label="hlavní navigace" class="fixed w-full z-50 transition-all duration-300">
 			<!-- Background that appears on scroll -->
@@ -132,10 +126,10 @@
 		</nav>
 
 		<!-- Hero Section -->
-		<div class="relative min-h-screen flex items-center justify-center">
+		<header class="relative min-h-screen flex items-center justify-center">
 			<div class="absolute inset-0 bg-[url('/bg.webp')] bg-cover bg-center blur-lg shadow-2xl"></div>
 			<div class="relative z-10 text-center px-4 flex flex-col items-center">
-				<NuxtImg class="h-32 mx-auto" src="/logo.svg" alt="Logo" />
+				<NuxtImg class="h-32 mx-auto" src="/logo.svg" alt="Logo" aria-label="Ananaso-Manie logo" />
 				<h1 class="text-5xl md:text-6xl font-bold text-primary mb-4">Vítej na našem serveru</h1>
 				<p class="text-xl md:text-2xl mb-8">Nejlepší minecraft zážitek začíná zde!</p>
 
@@ -149,7 +143,8 @@
 					<button
 						@click="copyAddress"
 						class="relative bg-primary text-dark font-bold h-12 px-8 rounded-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed w-[260px] flex items-center justify-center gap-2 hover:bg-primary/90"
-						:aria-label="serverAddressWasCopied ? 'Adresa zkopírována' : 'Kopírovat adresu serveru'">
+						:aria-label="serverAddressWasCopied ? 'Adresa zkopírována' : 'Kopírovat adresu serveru'"
+						:aria-pressed="serverAddressWasCopied">
 						<Transition
 							enter-active-class="transition duration-200 ease-out"
 							enter-from-class="transform scale-95 opacity-0"
@@ -165,11 +160,11 @@
 					</button>
 				</div>
 			</div>
-		</div>
+		</header>
 
 		<!-- Features Section -->
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-			<h1 class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h1>
+		<section aria-labelledby="features-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+			<h2 id="features-heading" class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
 				<div
 					v-for="(feature, index) in features"
@@ -193,15 +188,16 @@
 						loading="lazy"
 						format="webp"
 						class="w-full h-fit object-cover rounded-lg mb-4"
+						:aria-label="feature.title"
 						:src="feature.image"
 						:alt="feature.alt" />
 					<h2 class="text-xl font-bold">{{ feature.title }}</h2>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- Stats Section -->
-		<div class="py-16 bg-white/5">
+		<section aria-label="Statistiky serveru" class="py-16 bg-white/5">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
 					<div v-for="(stat, index) in stats" :key="index" class="p-8">
@@ -214,7 +210,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</section>
 
 		<!-- Footer -->
 		<footer class="backdrop-blur-sm py-12 mt-auto">
@@ -227,6 +223,7 @@
 							href="https://github.com/alexsvorada"
 							target="_blank"
 							rel="noopener noreferrer"
+							aria-label="GitHub profil vývojáře"
 							class="items-center inline-flex gap-2">
 							<Icon name="mdi:github" class="w-5 h-5" />
 							developed by alex
@@ -238,6 +235,7 @@
 						<p class="text-gray-400 mb-2">Potřebujete pomoct? Napište nám:</p>
 						<a
 							href="mailto:email@ananaso-manie.cz"
+							aria-label="Kontaktní email"
 							class="text-primary hover:text-primary/80 transition-colors inline-flex items-center gap-2">
 							<Icon name="lucide:mail" class="w-5 h-5" />
 							email@ananaso-manie.cz
@@ -246,7 +244,7 @@
 				</div>
 			</div>
 		</footer>
-	</div>
+	</main>
 </template>
 
 <style>
