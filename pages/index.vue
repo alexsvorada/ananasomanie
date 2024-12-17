@@ -103,17 +103,5 @@
 				</div>
 			</div>
 		</section>
-
-		<!-- Stats Section -->
-		<section class="py-16 bg-white/5">
-			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-					<div v-for="(stat, index) in stats" :key="index" class="p-8">
-						<div class="text-5xl font-bold text-primary mb-4">{{ stat.value }}</div>
-						<div class="text-lg text-gray-300">{{ stat.label }}</div>
-					</div>
-				</div>
-			</div>
-		</section>
 	</div>
 </template>
