@@ -34,90 +34,86 @@
 </script>
 
 <template>
-	<!-- Hero Section -->
-	<header class="relative min-h-screen flex items-center justify-center">
+	<div>
 		<BackgroundImage />
-		<div class="relative z-10 text-center px-4 flex flex-col items-center">
-			<NuxtImg class="h-32 mx-auto" src="/logo.svg" alt="Logo" aria-label="Ananaso-Manie logo" />
-			<h1 class="text-5xl md:text-6xl font-bold text-primary mt-16 mb-4">Vítej na našem serveru</h1>
-			<p class="text-xl md:text-2xl mb-8">Nejlepší minecraft zážitek začíná zde!</p>
+		<!-- Hero Section -->
+		<header class="min-h-screen flex items-center justify-center">
+			<div class="z-10 text-center flex flex-col items-center">
+				<NuxtImg class="h-32" src="/logo.svg" alt="Logo" aria-label="Ananaso-Manie logo" />
+				<h1 class="text-5xl md:text-6xl font-bold text-primary mt-16 mb-4">Vítej na našem serveru</h1>
+				<p class="text-xl md:text-2xl mb-8">Nejlepší minecraft zážitek začíná zde!</p>
 
-			<!-- New CTA Section -->
-			<div class="flex flex-col md:flex-row items-center justify-center gap-6 bg-dark/50 p-8 rounded-xl backdrop-blur-sm">
-				<div class="text-left">
-					<h2 class="text-2xl font-bold mb-2">Připoj se k nám ještě dnes!</h2>
-					<p class="text-gray-300">Zkopíruj adresu serveru a připoj se k tisícům hráčů.</p>
-				</div>
-
-				<button
-					@click="copyAddress"
-					class="relative bg-primary text-dark font-bold h-12 px-8 rounded-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed w-[260px] flex items-center justify-center gap-2 hover:bg-primary/90"
-					:aria-label="serverAddressWasCopied ? 'Adresa zkopírována' : 'Kopírovat adresu serveru'"
-					:aria-pressed="serverAddressWasCopied">
-					<Transition
-						enter-active-class="transition duration-200 ease-out"
-						enter-from-class="transform scale-95 opacity-0"
-						enter-to-class="transform scale-100 opacity-100"
-						leave-active-class="transition duration-150 ease-in"
-						leave-from-class="transform scale-100 opacity-100"
-						leave-to-class="transform scale-95 opacity-0">
-						<Tooltip v-show="serverAddressWasCopied" text="Skopírováno" />
-					</Transition>
-
-					<span>{{ serverAddress }}</span>
-					<Icon :name="serverAddressWasCopied ? 'lucide:copy-check' : 'lucide:copy'" class="w-5 h-5" />
-				</button>
-			</div>
-		</div>
-	</header>
-
-	<!-- Features Section -->
-	<section aria-labelledby="features-heading" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-		<h2 id="features-heading" class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h2>
-		<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-			<div
-				v-for="(feature, index) in features"
-				:key="index"
-				v-motion
-				:initial="{
-					opacity: 0,
-					y: 50,
-				}"
-				:visible-once="{
-					opacity: 1,
-					y: 0,
-					transition: {
-						delay: index * 50,
-						duration: 1000,
-					},
-				}"
-				once
-				class="feature bg-white/5 rounded-xl p-6">
-				<NuxtImg
-					loading="lazy"
-					format="webp"
-					class="w-full h-fit object-cover rounded-lg mb-4"
-					:aria-label="feature.title"
-					:src="feature.image"
-					:alt="feature.alt" />
-				<h2 class="text-xl font-bold">{{ feature.title }}</h2>
-			</div>
-		</div>
-	</section>
-
-	<!-- Stats Section -->
-	<section aria-label="Statistiky serveru" class="py-16 bg-white/5">
-		<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-			<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
-				<div v-for="(stat, index) in stats" :key="index" class="p-8">
-					<div class="text-5xl font-bold text-primary mb-4">
-						{{ stat.value }}
+				<div class="flex flex-col md:flex-row items-center justify-center gap-6 bg-dark/50 p-8 rounded-xl backdrop-blur-sm">
+					<div class="text-left">
+						<h2 class="text-2xl font-bold mb-2">Připoj se k nám ještě dnes!</h2>
+						<p class="text-gray-300">Zkopíruj adresu serveru a připoj se k tisícům hráčů.</p>
 					</div>
-					<div class="text-lg text-gray-300">
-						{{ stat.label }}
+
+					<button
+						@click="copyAddress"
+						class="relative bg-primary text-dark font-bold h-12 px-8 rounded-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed w-[260px] flex items-center justify-center gap-2 hover:bg-primary/90"
+						:aria-label="serverAddressWasCopied ? 'Adresa zkopírována' : 'Kopírovat adresu serveru'"
+						:aria-pressed="serverAddressWasCopied">
+						<Transition
+							enter-active-class="transition duration-200 ease-out"
+							enter-from-class="transform scale-95 opacity-0"
+							enter-to-class="transform scale-100 opacity-100"
+							leave-active-class="transition duration-150 ease-in"
+							leave-from-class="transform scale-100 opacity-100"
+							leave-to-class="transform scale-95 opacity-0">
+							<Tooltip v-show="serverAddressWasCopied" text="Skopírováno" />
+						</Transition>
+
+						<span>{{ serverAddress }}</span>
+						<Icon :name="serverAddressWasCopied ? 'lucide:copy-check' : 'lucide:copy'" class="w-5 h-5" />
+					</button>
+				</div>
+			</div>
+		</header>
+
+		<!-- Features Section -->
+		<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+			<h2 class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h2>
+			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+				<div
+					v-for="(feature, index) in features"
+					:key="index"
+					v-motion
+					:initial="{
+						opacity: 0,
+						y: 50,
+					}"
+					:visible-once="{
+						opacity: 1,
+						y: 0,
+						transition: {
+							delay: index * 10,
+							duration: 1000,
+						},
+					}"
+					class="feature bg-white/5 rounded-xl p-6">
+					<NuxtImg
+						loading="lazy"
+						format="webp"
+						class="w-full h-fit object-cover rounded-lg mb-4"
+						:aria-label="feature.title"
+						:src="feature.image"
+						:alt="feature.alt" />
+					<h2 class="text-xl font-bold">{{ feature.title }}</h2>
+				</div>
+			</div>
+		</section>
+
+		<!-- Stats Section -->
+		<section class="py-16 bg-white/5">
+			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+				<div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+					<div v-for="(stat, index) in stats" :key="index" class="p-8">
+						<div class="text-5xl font-bold text-primary mb-4">{{ stat.value }}</div>
+						<div class="text-lg text-gray-300">{{ stat.label }}</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 </template>
