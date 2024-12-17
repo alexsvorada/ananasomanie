@@ -1,8 +1,10 @@
 <script setup lang="ts">
+	const config = useRuntimeConfig()
+
 	const navItems = [
 		{ name: 'DOMŮ', path: '/' },
-		{ name: 'DISCORD', path: 'https://discord.gg/W6uWPMz', rel: 'noref noopener', target: '_blank' },
-		{ name: 'MAPA', path: 'http://82.208.17.82:29368/map.html', rel: 'noref noopener', target: '_blank' },
+		{ name: 'DISCORD', path: String(config.public.discordLink), rel: 'noref noopener', target: '_blank' },
+		{ name: 'MAPA', path: String(config.public.dynMapLink), rel: 'noref noopener', target: '_blank' },
 		{ name: 'HLASOVÁNÍ', path: '/vote' },
 		{ name: 'PRAVIDLA', path: '/rules' },
 		{ name: 'NÁVODY', path: '/guides' },

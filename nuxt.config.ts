@@ -5,6 +5,10 @@ export default defineNuxtConfig({
 	runtimeConfig: {
 		craftlistToken: '',
 		minecraftServeryToken: '',
+		public: {
+			discordLink: '',
+			dynmapLink: '',
+		},
 	},
 	app: {
 		pageTransition: { name: 'page', mode: 'out-in' },
