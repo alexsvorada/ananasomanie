@@ -1,3 +1,13 @@
 <template>
-	<div class="absolute inset-0 bg-[url('/bg.webp')] bg-cover bg-center blur-lg shadow-2xl"></div>
+	<NuxtImg
+		src="/bg.webp"
+		alt="Blurred christmas village background image"
+		loading="eager"
+		format="webp"
+		quality="75"
+		fit="cover"
+		densities="x1 x2"
+		placeholder
+		preload
+		class="absolute w-full inset-0 bg-cover bg-center blur-lg shadow-2xl" />
 </template>
