@@ -99,7 +99,7 @@
 		</main>
 
 		<!-- Footer -->
-		<footer class="backdrop-blur-sm py-12">
+		<footer class="backdrop-blur-sm py-24">
 			<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 				<div class="flex flex-col md:flex-row justify-between items-center gap-8">
 					<!-- Copyright and Credits -->
@@ -132,16 +132,3 @@
 		</footer>
 	</div>
 </template>
-
-<style>
-	:root {
-		--primary: #ffb23f;
-		--dark: #1a1a1a;
-		--light: #f5f5f5;
-		--accent: #ff6b6b;
-	}
-
-	body {
-		font-family: 'Figtree', sans-serif;
-	}
-</style>
