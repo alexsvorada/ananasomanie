@@ -10,21 +10,9 @@
 		{ image: '/community.webp', title: 'Příjemnou komunitu', alt: 'Community Icon' },
 	]
 
-	const serverAddress = 'mc.ananaso-manie.cz'
-	const serverAddressWasCopied = ref<boolean>(false)
-	const copyAddress = async () => {
-		try {
-			await navigator.clipboard.writeText(serverAddress)
-			serverAddressWasCopied.value = true
-
-			setTimeout(() => {
-				serverAddressWasCopied.value = false
-			}, 3000)
-		} catch (err) {
-			serverAddressWasCopied.value = false
-			console.error('Failed to copy the server address')
-		}
-	}
+	const serverAddress = String(useRuntimeConfig().public.serverAddress)
+	const { copied: serverAddressWasCopied, copyToClipboard } = useCopy()
+	const copyAddress = () => copyToClipboard(serverAddress)
 </script>
 
 <template>
@@ -57,9 +45,8 @@
 							leave-to-class="transform scale-95 opacity-0">
 							<Tooltip v-show="serverAddressWasCopied" text="Skopírováno" />
 						</Transition>
-
-						<span>{{ serverAddress }}</span>
 						<Icon :name="serverAddressWasCopied ? 'lucide:copy-check' : 'lucide:copy'" class="w-5 h-5" />
+						<span>{{ serverAddress }}</span>
 					</button>
 				</div>
 			</div>
