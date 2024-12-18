@@ -10,12 +10,6 @@
 		{ image: '/community.webp', title: 'Příjemnou komunitu', alt: 'Community Icon' },
 	]
 
-	const stats = [
-		{ value: '1000+', label: 'Aktivních hráčů' },
-		{ value: '50+', label: 'Unikátních událostí' },
-		{ value: '24/7', label: 'Online podpora' },
-	]
-
 	const serverAddress = 'mc.ananaso-manie.cz'
 	const serverAddressWasCopied = ref<boolean>(false)
 	const copyAddress = async () => {
