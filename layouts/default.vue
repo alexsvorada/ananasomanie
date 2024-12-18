@@ -3,12 +3,13 @@
 
 	const navItems = [
 		{ name: 'DOMŮ', path: '/' },
-		{ name: 'DISCORD', path: String(config.public.discordLink), rel: 'noref noopener', target: '_blank' },
-		{ name: 'MAPA', path: String(config.public.dynMapLink), rel: 'noref noopener', target: '_blank' },
-		{ name: 'HLASOVÁNÍ', path: '/vote' },
-		{ name: 'PRAVIDLA', path: '/rules' },
-		{ name: 'NÁVODY', path: '/guides' },
 		{ name: 'VIP', path: '/vip' },
+		{ name: 'HLASOVÁNÍ', path: '/vote' },
+		{ name: 'MAPA', path: '/dynmap' },
+		{ name: 'NÁVODY', path: '/guides' },
+		{ name: 'PRAVIDLA', path: '/rules' },
+		{ name: 'ADMIN-TEAM', path: '/team' },
+		{ name: 'DISCORD', path: String(config.public.discordLink), rel: 'noref noopener', target: '_blank' },
 	]
 
 	const mobileMenuOpen = ref<boolean>(false)
