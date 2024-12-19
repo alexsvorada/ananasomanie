@@ -1,0 +1,52 @@
+{
+	"enchanty": [
+		{
+			"name": "Example Enchant",
+			"amount": 1,
+			"price": 100
+		}
+	],
+	"zbrane": [
+		{
+			"name": "Example Weapon",
+			"amount": 1,
+			"price": 150
+		}
+	],
+	"uzitecnePredmety": [],
+	"zakladniStroje": [],
+	"nastroje": [],
+	"materialy": [],
+	"extraGear": [],
+	"jidlo": [],
+	"magickePredmety": [],
+	"magickaZbroj": [],
+	"technickeKomponenty": [],
+	"smisenePredmety": [],
+	"brneni": [],
+	"talismanyTier1": [],
+	"magickePomucky": [],
+	"dankTech2": [],
+	"magicalPlants": [],
+	"technickePomucky": [],
+	"enderitoveTalismanyTier2": [],
+	"soulJars": [],
+	"extraTools": [],
+	"galactifun": [],
+	"globalWarming": [],
+	"mobCapturer": [],
+	"transcEndence": [],
+	"luckyBlocks": [],
+	"foxyMachines": [],
+	"slimyTreeTaps": [],
+	"fluffyMachines": [],
+	"soundMuffler": [],
+	"liteXpansion": [],
+	"infinityExpansion": [],
+	"dynaTech": [],
+	"energieElektrika": [],
+	"gpsStroje": [],
+	"programovatelneAndoidy": [],
+	"cargoSystem": [],
+	"ecoPowerGenerators": []
+}
