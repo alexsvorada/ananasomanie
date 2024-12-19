@@ -1,52 +1,6042 @@
 {
-	"enchanty": [
-		{
-			"name": "Example Enchant",
-			"amount": 1,
-			"price": 100
-		}
-	],
-	"zbrane": [
-		{
-			"name": "Example Weapon",
-			"amount": 1,
-			"price": 150
-		}
-	],
-	"uzitecnePredmety": [],
-	"zakladniStroje": [],
-	"nastroje": [],
-	"materialy": [],
-	"extraGear": [],
-	"jidlo": [],
-	"magickePredmety": [],
-	"magickaZbroj": [],
-	"technickeKomponenty": [],
-	"smisenePredmety": [],
-	"brneni": [],
-	"talismanyTier1": [],
-	"magickePomucky": [],
-	"dankTech2": [],
-	"magicalPlants": [],
-	"technickePomucky": [],
-	"enderitoveTalismanyTier2": [],
-	"soulJars": [],
-	"extraTools": [],
-	"galactifun": [],
-	"globalWarming": [],
-	"mobCapturer": [],
-	"transcEndence": [],
-	"luckyBlocks": [],
-	"foxyMachines": [],
-	"slimyTreeTaps": [],
-	"fluffyMachines": [],
-	"soundMuffler": [],
-	"liteXpansion": [],
-	"infinityExpansion": [],
-	"dynaTech": [],
-	"energieElektrika": [],
-	"gpsStroje": [],
-	"programovatelneAndoidy": [],
-	"cargoSystem": [],
-	"ecoPowerGenerators": []
+	"magicalPlants": {
+		"name": "Magical Plants",
+		"items": [
+			{
+				"name": "Dirt Plant",
+				"amount": 1,
+				"price": 5
+			},
+			{
+				"name": "Coal Plant",
+				"amount": 1,
+				"price": 801
+			},
+			{
+				"name": "Iron Plant",
+				"amount": 1,
+				"price": 17001
+			},
+			{
+				"name": "Gold Plant",
+				"amount": 1,
+				"price": 21201
+			},
+			{
+				"name": "Copper Plant",
+				"amount": 1,
+				"price": 21245
+			},
+			{
+				"name": "Aluminum Plant",
+				"amount": 1,
+				"price": 21245
+			},
+			{
+				"name": "Silver Plant",
+				"amount": 1,
+				"price": 21245
+			},
+			{
+				"name": "Tin Plant",
+				"amount": 1,
+				"price": 21245
+			},
+			{
+				"name": "Lead Plant",
+				"amount": 1,
+				"price": 21245
+			},
+			{
+				"name": "Redstone Plant",
+				"amount": 1,
+				"price": 21741
+			},
+			{
+				"name": "Lapis Plant",
+				"amount": 1,
+				"price": 22141
+			},
+			{
+				"name": "Ender Plant",
+				"amount": 1,
+				"price": 22191
+			},
+			{
+				"name": "Quartz Plant",
+				"amount": 1,
+				"price": 22351
+			},
+			{
+				"name": "Diamond Plant",
+				"amount": 1,
+				"price": 26351
+			},
+			{
+				"name": "Emerald Plant",
+				"amount": 1,
+				"price": 26951
+			},
+			{
+				"name": "Netherite Plant",
+				"amount": 1,
+				"price": 206951
+			},
+			{
+				"name": "Glowstone Plant",
+				"amount": 1,
+				"price": 21881
+			},
+			{
+				"name": "Obsidian Plant",
+				"amount": 1,
+				"price": 22541
+			},
+			{
+				"name": "Slime Plant",
+				"amount": 1,
+				"price": 22201
+			}
+		]
+	},
+	"materialy": {
+		"name": "Materiály",
+		"items": [
+			{
+				"name": "Reinforced Alloy Ingot",
+				"amount": 1,
+				"price": 7227
+			},
+			{
+				"name": "Hardened Metal",
+				"amount": 1,
+				"price": 3093
+			},
+			{
+				"name": "Damascus Steel Ingot",
+				"amount": 1,
+				"price": 2200
+			},
+			{
+				"name": "Steel Ingot",
+				"amount": 1,
+				"price": 1100
+			},
+			{
+				"name": "Bronze Ingot",
+				"amount": 1,
+				"price": 37
+			},
+			{
+				"name": "Duralium Ingot",
+				"amount": 1,
+				"price": 37
+			},
+			{
+				"name": "Billon Ingot",
+				"amount": 1,
+				"price": 37
+			},
+			{
+				"name": "Brass Ingot",
+				"amount": 1,
+				"price": 37
+			},
+			{
+				"name": "Aluminum Brass Ingot",
+				"amount": 1,
+				"price": 62
+			},
+			{
+				"name": "Aluminum Bronze Ingot",
+				"amount": 1,
+				"price": 62
+			},
+			{
+				"name": "Corinthian Bronze Ingot",
+				"amount": 1,
+				"price": 210
+			},
+			{
+				"name": "Solder Ingot",
+				"amount": 1,
+				"price": 37
+			},
+			{
+				"name": "Synthetic Sapphire",
+				"amount": 1,
+				"price": 42
+			},
+			{
+				"name": "Synthetic Diamond",
+				"amount": 1,
+				"price": 6415
+			},
+			{
+				"name": "Raw Carbonado",
+				"amount": 1,
+				"price": 12831
+			},
+			{
+				"name": "Nickel Ingot",
+				"amount": 1,
+				"price": 912
+			},
+			{
+				"name": "Cobalt Ingot",
+				"amount": 1,
+				"price": 1973
+			},
+			{
+				"name": "Carbonado",
+				"amount": 1,
+				"price": 12831
+			},
+			{
+				"name": "Ferrosilicon",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Iron Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Gold Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Copper Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Tin Dust ",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Silver Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Lead Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Aluminum Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Zinc Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Magnesium Dust",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Copper Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Tin Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Silver Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Lead Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Aluminum Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Zinc Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Magnesium Ingot",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Sulfate",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Carbon",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Compressed Carbon",
+				"amount": 1,
+				"price": 800
+			},
+			{
+				"name": "Carbon Chunk",
+				"amount": 1,
+				"price": 6415
+			},
+			{
+				"name": "Gold Ingot 4-karát",
+				"amount": 1,
+				"price": 150
+			},
+			{
+				"name": "Gold Ingot 6-karát",
+				"amount": 1,
+				"price": 300
+			},
+			{
+				"name": "Gold Ingot 8-karát",
+				"amount": 1,
+				"price": 450
+			},
+			{
+				"name": "Gold Ingot 10-karát",
+				"amount": 1,
+				"price": 600
+			},
+			{
+				"name": "Gold Ingot 12-karát",
+				"amount": 1,
+				"price": 750
+			},
+			{
+				"name": "Gold Ingot 14-karát",
+				"amount": 1,
+				"price": 900
+			},
+			{
+				"name": "Gold Ingot 16-karát",
+				"amount": 1,
+				"price": 1050
+			},
+			{
+				"name": "Gold Ingot 18-karát",
+				"amount": 1,
+				"price": 1200
+			},
+			{
+				"name": "Gold Ingot 20-karát",
+				"amount": 1,
+				"price": 1350
+			},
+			{
+				"name": "Gold Ingot 22-karát",
+				"amount": 1,
+				"price": 1500
+			},
+			{
+				"name": "Gold Ingot 24-karát",
+				"amount": 1,
+				"price": 1650
+			},
+			{
+				"name": "Silicon",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Gilded Iron",
+				"amount": 1,
+				"price": 2100
+			},
+			{
+				"name": "Synthetic Emerald",
+				"amount": 1,
+				"price": 68
+			},
+			{
+				"name": "Uranium",
+				"amount": 1,
+				"price": 2415
+			},
+			{
+				"name": "Redstone Alloy Ingot",
+				"amount": 1,
+				"price": 4231
+			},
+			{
+				"name": "Magnesium Salt",
+				"amount": 1,
+				"price": 10
+			},
+			{
+				"name": "Bucket of Oil",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Bucket of Fuel",
+				"amount": 1,
+				"price": 1100
+			},
+			{
+				"name": "Nether Ice",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Blistering Ingot (33%)",
+				"amount": 1,
+				"price": 2650
+			},
+			{
+				"name": "Blistering Ingot (66%)",
+				"amount": 1,
+				"price": 15481
+			},
+			{
+				"name": "Blistering Ingot",
+				"amount": 1,
+				"price": 25481
+			},
+			{
+				"name": "Enriched Nether Ice",
+				"amount": 1,
+				"price": 275
+			},
+			{
+				"name": "Neptunium",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Plutonium",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Boosted Uranium",
+				"amount": 1,
+				"price": 2000
+			}
+		]
+	},
+	"magickePomucky": {
+		"name": "Magické pomůcky",
+		"items": [
+			{
+				"name": "Ender Backpack",
+				"amount": 1,
+				"price": 44
+			},
+			{
+				"name": "Magic Eye of Ender",
+				"amount": 1,
+				"price": 89
+			},
+			{
+				"name": "Elemental Staff",
+				"amount": 1,
+				"price": 157
+			},
+			{
+				"name": "Elemental Staff - Wind",
+				"amount": 1,
+				"price": 2948
+			},
+			{
+				"name": "Elemental Staff - Water",
+				"amount": 1,
+				"price": 2920
+			},
+			{
+				"name": "Elemental Staff - Fire",
+				"amount": 1,
+				"price": 2961
+			},
+			{
+				"name": "Elemental Staff - Storm",
+				"amount": 1,
+				"price": 10715
+			},
+			{
+				"name": "Magical Zombie Pills",
+				"amount": 2,
+				"price": 2232
+			},
+			{
+				"name": "Infused Magnet",
+				"amount": 1,
+				"price": 3055
+			},
+			{
+				"name": "Soulbound Backpack",
+				"amount": 1,
+				"price": 9378
+			},
+			{
+				"name": "Reinforced Spawner",
+				"amount": 1,
+				"price": 80000
+			},
+			{
+				"name": "Tome of Knowledge Sharing",
+				"amount": 1,
+				"price": 85
+			},
+			{
+				"name": "Flask of Knowledge",
+				"amount": 8,
+				"price": 19
+			},
+			{
+				"name": "Ancient Pedestal",
+				"amount": 4,
+				"price": 1301
+			},
+			{
+				"name": "Ancient Altar",
+				"amount": 1,
+				"price": 3598
+			},
+			{
+				"name": "Infernal Bonemeal",
+				"amount": 8,
+				"price": 108
+			},
+			{
+				"name": "Elytra Scale",
+				"amount": 1,
+				"price": 820
+			},
+			{
+				"name": "Infused Elytra",
+				"amount": 1,
+				"price": 104155
+			},
+			{
+				"name": "Soulbound Elytra",
+				"amount": 1,
+				"price": 105161
+			},
+			{
+				"name": "Trident",
+				"amount": 1,
+				"price": 33115
+			},
+			{
+				"name": "Totem of Undying",
+				"amount": 1,
+				"price": 10944
+			},
+			{
+				"name": "Rainbow Wool",
+				"amount": 8,
+				"price": 368
+			},
+			{
+				"name": "Rainbow Glass",
+				"amount": 8,
+				"price": 408
+			},
+			{
+				"name": "Rainbow Glass Pane",
+				"amount": 8,
+				"price": 328
+			},
+			{
+				"name": "Rainbow Clay",
+				"amount": 8,
+				"price": 728
+			},
+			{
+				"name": "Rainbow Concrete",
+				"amount": 8,
+				"price": 448
+			},
+			{
+				"name": "Rainbow Glazed Terracotta",
+				"amount": 8,
+				"price": 808
+			},
+			{
+				"name": "Infused Hopper",
+				"amount": 1,
+				"price": 3646
+			}
+		]
+	},
+	"jidlo": {
+		"name": "Jídlo",
+		"items": [
+			{
+				"name": "Fortune Cookie",
+				"amount": 1,
+				"price": 20
+			},
+			{
+				"name": "Diet Cookie",
+				"amount": 1,
+				"price": 10
+			},
+			{
+				"name": "Beef Jerky",
+				"amount": 1,
+				"price": 60
+			},
+			{
+				"name": "Pork Jerky",
+				"amount": 1,
+				"price": 25
+			},
+			{
+				"name": "Chicken Jerky",
+				"amount": 1,
+				"price": 25
+			},
+			{
+				"name": "Mutton Jerky",
+				"amount": 1,
+				"price": 25
+			},
+			{
+				"name": "Rabbit Jerky",
+				"amount": 1,
+				"price": 80
+			},
+			{
+				"name": "Fish Jerky",
+				"amount": 1,
+				"price": 28
+			},
+			{
+				"name": "Kelp Cookie",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Magic Sugar",
+				"amount": 1,
+				"price": 9
+			},
+			{
+				"name": "Monster Jerky",
+				"amount": 1,
+				"price": 11
+			},
+			{
+				"name": "Apple Juice",
+				"amount": 1,
+				"price": 10
+			},
+			{
+				"name": "Carrot Juice",
+				"amount": 1,
+				"price": 20
+			},
+			{
+				"name": "Melon Juice",
+				"amount": 1,
+				"price": 10
+			},
+			{
+				"name": "Pumpkin Juice",
+				"amount": 1,
+				"price": 3
+			},
+			{
+				"name": "Sweet Berry Juice",
+				"amount": 1,
+				"price": 80
+			},
+			{
+				"name": "Golden Apple Juice",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Glow Berry Juice",
+				"amount": 1,
+				"price": 150
+			}
+		]
+	},
+	"galactifun": {
+		"name": "Galactifun",
+		"items": [
+			{
+				"name": "Heat Resistance Upgrade",
+				"amount": 1,
+				"price": 52170
+			},
+			{
+				"name": "Cold Resistance Upgrade",
+				"amount": 1,
+				"price": 51554
+			},
+			{
+				"name": "Radiation Resistance Upgrade",
+				"amount": 1,
+				"price": 4154
+			},
+			{
+				"name": "Space Suit Helmet",
+				"amount": 1,
+				"price": 28493
+			},
+			{
+				"name": "Space Suit Chest",
+				"amount": 1,
+				"price": 11076
+			},
+			{
+				"name": "Space Suit Pants",
+				"amount": 1,
+				"price": 2816
+			},
+			{
+				"name": "Space Suit Boots",
+				"amount": 1,
+				"price": 1894
+			},
+			{
+				"name": "Fusion Pellet",
+				"amount": 8,
+				"price": 5800
+			},
+			{
+				"name": "Landing Hatch",
+				"amount": 1,
+				"price": 35988
+			},
+			{
+				"name": "Launch Pad Floor",
+				"amount": 1,
+				"price": 21888
+			},
+			{
+				"name": "Launch Pad Core",
+				"amount": 1,
+				"price": 108296
+			},
+			{
+				"name": "Super Fan",
+				"amount": 1,
+				"price": 8092
+			},
+			{
+				"name": "Volcanic Ingot",
+				"amount": 1,
+				"price": 2000
+			},
+			{
+				"name": "Aluminum Composite",
+				"amount": 1,
+				"price": 57
+			},
+			{
+				"name": "Tungsten Ingot",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Aluminum Composite Sheet",
+				"amount": 1,
+				"price": 456
+			},
+			{
+				"name": "Heavy Duty Sheet",
+				"amount": 1,
+				"price": 3648
+			},
+			{
+				"name": "Space Grade Plate",
+				"amount": 1,
+				"price": 6948
+			},
+			{
+				"name": "Ultra Duty Sheet",
+				"amount": 1,
+				"price": 27792
+			},
+			{
+				"name": "Gold Foil",
+				"amount": 4,
+				"price": 14850
+			},
+			{
+				"name": "Reinforced Channel",
+				"amount": 8,
+				"price": 2736
+			},
+			{
+				"name": "Fan Blade",
+				"amount": 1,
+				"price": 4400
+			},
+			{
+				"name": "Nozzle",
+				"amount": 2,
+				"price": 5300
+			},
+			{
+				"name": "Filter",
+				"amount": 1,
+				"price": 87
+			},
+			{
+				"name": "Oxygen Regenerator",
+				"amount": 1,
+				"price": 19045
+			},
+			{
+				"name": "Spark Plug",
+				"amount": 1,
+				"price": 19937
+			},
+			{
+				"name": "Spark Plug Mk 2",
+				"amount": 1,
+				"price": 22424
+			},
+			{
+				"name": "Advanced Processing Unit",
+				"amount": 1,
+				"price": 20690
+			},
+			{
+				"name": "Fuel Tank",
+				"amount": 1,
+				"price": 29184
+			},
+			{
+				"name": "Fuel Tank Mk 2",
+				"amount": 1,
+				"price": 222336
+			},
+			{
+				"name": "Diamond Circuit",
+				"amount": 1,
+				"price": 9100
+			},
+			{
+				"name": "Redstone Circuit",
+				"amount": 1,
+				"price": 235
+			},
+			{
+				"name": "Lapis Circuit",
+				"amount": 1,
+				"price": 235
+			},
+			{
+				"name": "Glowstone Circuit",
+				"amount": 1,
+				"price": 135
+			},
+			{
+				"name": "Ender Block",
+				"amount": 1,
+				"price": 5200
+			},
+			{
+				"name": "Lunar Glass",
+				"amount": 1,
+				"price": 201
+			},
+			{
+				"name": "Tungsten Carbide",
+				"amount": 1,
+				"price": 3300
+			},
+			{
+				"name": "Blistering Volcanic Ingot",
+				"amount": 1,
+				"price": 5000
+			},
+			{
+				"name": "Laserite Dust",
+				"amount": 1,
+				"price": 7500
+			},
+			{
+				"name": "Laserite",
+				"amount": 1,
+				"price": 90000
+			},
+			{
+				"name": "Stargate Ring",
+				"amount": 1,
+				"price": 548672
+			},
+			{
+				"name": "Stargate Controller",
+				"amount": 1,
+				"price": 2204628
+			},
+			{
+				"name": "Oxygen Filler",
+				"amount": 1,
+				"price": 7478
+			},
+			{
+				"name": "Space Suit Upgrade",
+				"amount": 1,
+				"price": 7450
+			},
+			{
+				"name": "Circuit Press",
+				"amount": 1,
+				"price": 24764
+			},
+			{
+				"name": "Assembly Table",
+				"amount": 1,
+				"price": 96182
+			},
+			{
+				"name": "Cooling Unit I",
+				"amount": 1,
+				"price": 30284
+			},
+			{
+				"name": "Cooling Unit II",
+				"amount": 1,
+				"price": 62076
+			},
+			{
+				"name": "Cooling Unit III",
+				"amount": 1,
+				"price": 80668
+			},
+			{
+				"name": "Space Heater I",
+				"amount": 1,
+				"price": 29976
+			},
+			{
+				"name": "Space Heater II",
+				"amount": 1,
+				"price": 64906
+			},
+			{
+				"name": "Space Heater III",
+				"amount": 1,
+				"price": 90498
+			},
+			{
+				"name": "Ion Disperser I",
+				"amount": 1,
+				"price": 7424
+			},
+			{
+				"name": "Ion Disperser II",
+				"amount": 1,
+				"price": 46616
+			},
+			{
+				"name": "Observatory",
+				"amount": 1,
+				"price": 16501
+			},
+			{
+				"name": "Planetary Analyzer",
+				"amount": 1,
+				"price": 1389894
+			},
+			{
+				"name": "Diamond Anvil",
+				"amount": 1,
+				"price": 232580
+			},
+			{
+				"name": "Oxygen Sealer",
+				"amount": 1,
+				"price": 26523
+			},
+			{
+				"name": "Environmental Forcefield Generator",
+				"amount": 1,
+				"price": 15816
+			},
+			{
+				"name": "Fusion Reactor",
+				"amount": 1,
+				"price": 1283086
+			},
+			{
+				"name": "Atmospheric Harvester",
+				"amount": 1,
+				"price": 53036
+			},
+			{
+				"name": "Chemical Reactor",
+				"amount": 1,
+				"price": 143652
+			},
+			{
+				"name": "Electrolyzer",
+				"amount": 1,
+				"price": 88094
+			},
+			{
+				"name": "Technological Salvager",
+				"amount": 1,
+				"price": 152598
+			},
+			{
+				"name": "Rocket Engine",
+				"amount": 1,
+				"price": 97652
+			},
+			{
+				"name": "Rocket Engine Mk 2",
+				"amount": 1,
+				"price": 137426
+			},
+			{
+				"name": "Rocket Engine Mk 3",
+				"amount": 1,
+				"price": 112088
+			},
+			{
+				"name": "Ion Engine",
+				"amount": 1,
+				"price": 2758247
+			},
+			{
+				"name": "Life Support Machine",
+				"amount": 1,
+				"price": 180218
+			},
+			{
+				"name": "Nose Cone",
+				"amount": 1,
+				"price": 870
+			},
+			{
+				"name": "Diamond Anvil Cell",
+				"amount": 1,
+				"price": 244892
+			},
+			{
+				"name": "Chemical Rocket Tier 1",
+				"amount": 1,
+				"price": 810444
+			},
+			{
+				"name": "Chemical Rocket Tier 2",
+				"amount": 1,
+				"price": 889992
+			},
+			{
+				"name": "Chemical Rocket Tier 3",
+				"amount": 1,
+				"price": 839316
+			},
+			{
+				"name": "Ion Rocket",
+				"amount": 1,
+				"price": 8111627
+			}
+		]
+	},
+	"extraTools": {
+		"name": "Extra Tools",
+		"items": [
+			{
+				"name": "Hammer",
+				"amount": 1,
+				"price": 2252
+			},
+			{
+				"name": "Gold Transmuter",
+				"amount": 1,
+				"price": 44121
+			},
+			{
+				"name": "Electric Composter",
+				"amount": 1,
+				"price": 33874
+			},
+			{
+				"name": "Electric Composter (II)",
+				"amount": 1,
+				"price": 124036
+			},
+			{
+				"name": "Cobblestone Generator",
+				"amount": 1,
+				"price": 215987
+			},
+			{
+				"name": "Vaporizer",
+				"amount": 1,
+				"price": 84416
+			},
+			{
+				"name": "Concrete Factory",
+				"amount": 1,
+				"price": 19903
+			},
+			{
+				"name": "Pulverizer",
+				"amount": 1,
+				"price": 41451
+			}
+		]
+	},
+	"cargoSystem": {
+		"name": "Cargo System",
+		"items": [
+			{
+				"name": "Cargo Motor",
+				"amount": 4,
+				"price": 18394
+			},
+			{
+				"name": "Cargo Manager",
+				"amount": 1,
+				"price": 45965
+			},
+			{
+				"name": "Cargo Node (Connector)",
+				"amount": 4,
+				"price": 4799
+			},
+			{
+				"name": "Cargo Node (Input)",
+				"amount": 2,
+				"price": 1373
+			},
+			{
+				"name": "Cargo Node (Output)",
+				"amount": 2,
+				"price": 1373
+			},
+			{
+				"name": "Advanced Cargo Node (Output)",
+				"amount": 1,
+				"price": 12630
+			},
+			{
+				"name": "Reactor Access Port",
+				"amount": 1,
+				"price": 11266
+			},
+			{
+				"name": "Trash Can",
+				"amount": 1,
+				"price": 8265
+			},
+			{
+				"name": "Crafting Motor",
+				"amount": 2,
+				"price": 16076
+			},
+			{
+				"name": "Auto-Crafter (Vanilla)",
+				"amount": 1,
+				"price": 17786
+			},
+			{
+				"name": "Auto-Crafter (Enhanced)",
+				"amount": 1,
+				"price": 12694
+			},
+			{
+				"name": "Auto-Crafter (Armor Forge)",
+				"amount": 1,
+				"price": 27237
+			}
+		]
+	},
+	"energieAElektrika": {
+		"name": "Energie a elektrika",
+		"items": [
+			{
+				"name": "Energy Regulator",
+				"amount": 1,
+				"price": 13964
+			},
+			{
+				"name": "Energy Connector",
+				"amount": 8,
+				"price": 955
+			},
+			{
+				"name": "Small Energy Capacitor",
+				"amount": 1,
+				"price": 8744
+			},
+			{
+				"name": "Medium Energy Capacitor",
+				"amount": 1,
+				"price": 17360
+			},
+			{
+				"name": "Big Energy Capacitor",
+				"amount": 1,
+				"price": 30228
+			},
+			{
+				"name": "Large Energy Capacitor",
+				"amount": 1,
+				"price": 44696
+			},
+			{
+				"name": "Carbonado Edged Energy Capacitor",
+				"amount": 1,
+				"price": 104489
+			},
+			{
+				"name": "Energized Energy Capacitor",
+				"amount": 1,
+				"price": 175819
+			},
+			{
+				"name": "Solar Generator",
+				"amount": 1,
+				"price": 19594
+			},
+			{
+				"name": "Advanced Solar Generator",
+				"amount": 1,
+				"price": 78435
+			},
+			{
+				"name": "Carbonado Solar Generator",
+				"amount": 1,
+				"price": 326627
+			},
+			{
+				"name": "Energized Solar Generator",
+				"amount": 1,
+				"price": 1317623
+			},
+			{
+				"name": "Charging Bench",
+				"amount": 1,
+				"price": 14019
+			},
+			{
+				"name": "Electric Furnace",
+				"amount": 1,
+				"price": 18731
+			},
+			{
+				"name": "Electric Furnace - II",
+				"amount": 1,
+				"price": 37454
+			},
+			{
+				"name": "Electric Furnace - III",
+				"amount": 1,
+				"price": 54177
+			},
+			{
+				"name": "Electric Gold Pan",
+				"amount": 1,
+				"price": 5231
+			},
+			{
+				"name": "Electric Gold Pan (II)",
+				"amount": 1,
+				"price": 6262
+			},
+			{
+				"name": "Electric Gold Pan (III)",
+				"amount": 1,
+				"price": 19311
+			},
+			{
+				"name": "Electric Dust Washer",
+				"amount": 1,
+				"price": 15694
+			},
+			{
+				"name": "Electric Dust Washer (II)",
+				"amount": 1,
+				"price": 32718
+			},
+			{
+				"name": "Electric Dust Washer (III)",
+				"amount": 1,
+				"price": 45061
+			},
+			{
+				"name": "Electric Ingot Factory",
+				"amount": 1,
+				"price": 35649
+			},
+			{
+				"name": "Electric Ingot Factory (II)",
+				"amount": 1,
+				"price": 50336
+			},
+			{
+				"name": "Electric Ingot Factory (III)",
+				"amount": 1,
+				"price": 66522
+			},
+			{
+				"name": "Electrified Crucible",
+				"amount": 1,
+				"price": 54741
+			},
+			{
+				"name": "Electrified Crucible - II",
+				"amount": 1,
+				"price": 69911
+			},
+			{
+				"name": "Electrified Crucible - III",
+				"amount": 1,
+				"price": 94566
+			},
+			{
+				"name": "Electric Ore Grinder",
+				"amount": 1,
+				"price": 19723
+			},
+			{
+				"name": "Electric Ore Grinder (II)",
+				"amount": 1,
+				"price": 36785
+			},
+			{
+				"name": "Electric Ore Grinder (III)",
+				"amount": 1,
+				"price": 91467
+			},
+			{
+				"name": "Heated Pressure Chamber",
+				"amount": 1,
+				"price": 10404
+			},
+			{
+				"name": "Heated Pressure Chamber - II",
+				"amount": 1,
+				"price": 23780
+			},
+			{
+				"name": "Electric Ingot Pulverizer",
+				"amount": 1,
+				"price": 42318
+			},
+			{
+				"name": "Coal Generator",
+				"amount": 1,
+				"price": 18248
+			},
+			{
+				"name": "Coal Generator (II)",
+				"amount": 1,
+				"price": 34817
+			},
+			{
+				"name": "Bio Reactor",
+				"amount": 1,
+				"price": 15993
+			},
+			{
+				"name": "Auto Drier",
+				"amount": 1,
+				"price": 10414
+			},
+			{
+				"name": "Auto Brewer",
+				"amount": 1,
+				"price": 35323
+			},
+			{
+				"name": "Electric Press",
+				"amount": 1,
+				"price": 29202
+			},
+			{
+				"name": "Electric Press - II",
+				"amount": 1,
+				"price": 70530
+			},
+			{
+				"name": "Magnesium-powered Generator",
+				"amount": 1,
+				"price": 7052
+			},
+			{
+				"name": "Auto Enchanter",
+				"amount": 1,
+				"price": 34156
+			},
+			{
+				"name": "Auto Enchanter - II",
+				"amount": 1,
+				"price": 98402
+			},
+			{
+				"name": "Auto Disenchanter",
+				"amount": 1,
+				"price": 74677
+			},
+			{
+				"name": "Auto Disenchanter - II",
+				"amount": 1,
+				"price": 146458
+			},
+			{
+				"name": "Auto Anvil",
+				"amount": 1,
+				"price": 34241
+			},
+			{
+				"name": "Auto Anvil Mk.II",
+				"amount": 1,
+				"price": 69173
+			},
+			{
+				"name": "Book Binder",
+				"amount": 1,
+				"price": 14571
+			},
+			{
+				"name": "Refinery",
+				"amount": 1,
+				"price": 16806
+			},
+			{
+				"name": "Lava Generator",
+				"amount": 1,
+				"price": 23154
+			},
+			{
+				"name": "Lava Generator (II)",
+				"amount": 1,
+				"price": 36547
+			},
+			{
+				"name": "Combustion Reactor",
+				"amount": 1,
+				"price": 19904
+			},
+			{
+				"name": "Food Fabricator",
+				"amount": 1,
+				"price": 13999
+			},
+			{
+				"name": "Food Fabricator (II)",
+				"amount": 1,
+				"price": 37080
+			},
+			{
+				"name": "Auto-Breeder",
+				"amount": 1,
+				"price": 26750
+			},
+			{
+				"name": "Animal Growth Accelerator",
+				"amount": 1,
+				"price": 41542
+			},
+			{
+				"name": "Tree Growth Accelerator",
+				"amount": 1,
+				"price": 54370
+			},
+			{
+				"name": "EXP Collector",
+				"amount": 1,
+				"price": 41524
+			},
+			{
+				"name": "Food Composter",
+				"amount": 1,
+				"price": 40928
+			},
+			{
+				"name": "Food Composter (II)",
+				"amount": 1,
+				"price": 64009
+			},
+			{
+				"name": "Crop Growth Accelerator",
+				"amount": 1,
+				"price": 107981
+			},
+			{
+				"name": "Crop Growth Accelerator (II)",
+				"amount": 1,
+				"price": 131168
+			},
+			{
+				"name": "Freezer",
+				"amount": 1,
+				"price": 38123
+			},
+			{
+				"name": "Freezer (II)",
+				"amount": 1,
+				"price": 58878
+			},
+			{
+				"name": "Freezer (III)",
+				"amount": 1,
+				"price": 89286
+			},
+			{
+				"name": "Nuclear Reactor",
+				"amount": 1,
+				"price": 148743
+			},
+			{
+				"name": "Nether Star Reactor",
+				"amount": 1,
+				"price": 166909
+			},
+			{
+				"name": "Fluid Pump",
+				"amount": 1,
+				"price": 49161
+			},
+			{
+				"name": "Carbon Press",
+				"amount": 1,
+				"price": 39539
+			},
+			{
+				"name": "Carbon Press - II",
+				"amount": 1,
+				"price": 86217
+			},
+			{
+				"name": "Carbon Press - III",
+				"amount": 1,
+				"price": 135495
+			},
+			{
+				"name": "Electric Smeltery",
+				"amount": 1,
+				"price": 60575
+			},
+			{
+				"name": "Electric Smeltery - II",
+				"amount": 1,
+				"price": 91275
+			},
+			{
+				"name": "Iron Golem Assembler",
+				"amount": 1,
+				"price": 136679
+			},
+			{
+				"name": "Wither Assembler",
+				"amount": 1,
+				"price": 138001
+			},
+			{
+				"name": "Produce Collector",
+				"amount": 1,
+				"price": 22854
+			}
+		]
+	},
+	"networks": {
+		"name": "Networks",
+		"items": [
+			{
+				"name": "Synthetic Emerald Shard",
+				"amount": 3,
+				"price": 138
+			},
+			{
+				"name": "Optic Glass",
+				"amount": 8,
+				"price": 58
+			},
+			{
+				"name": "Optic Cable",
+				"amount": 16,
+				"price": 100
+			},
+			{
+				"name": "Optic Star",
+				"amount": 1,
+				"price": 10054
+			},
+			{
+				"name": "Radioactive Optic Star",
+				"amount": 1,
+				"price": 162952
+			},
+			{
+				"name": "Shrinking Base",
+				"amount": 1,
+				"price": 181007
+			},
+			{
+				"name": "Simple Nanobots",
+				"amount": 4,
+				"price": 219069
+			},
+			{
+				"name": "Advanced Nanobots",
+				"amount": 4,
+				"price": 431238
+			},
+			{
+				"name": "A.I. Core",
+				"amount": 1,
+				"price": 134973
+			},
+			{
+				"name": "Empowered A.I. Core",
+				"amount": 1,
+				"price": 467958
+			},
+			{
+				"name": "Pristine A.I. Core",
+				"amount": 1,
+				"price": 588269
+			},
+			{
+				"name": "Interdimensional Presence",
+				"amount": 1,
+				"price": 823912
+			},
+			{
+				"name": "Crafting Blueprint",
+				"amount": 1,
+				"price": 55
+			},
+			{
+				"name": "Network Probe",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Network Remote",
+				"amount": 1,
+				"price": 155209
+			},
+			{
+				"name": "Network Remote Empowered",
+				"amount": 1,
+				"price": 778377
+			},
+			{
+				"name": "Network Remote Pristine",
+				"amount": 1,
+				"price": 2145024
+			},
+			{
+				"name": "Netwrok Remote Ultimate",
+				"amount": 1,
+				"price": 5113962
+			},
+			{
+				"name": "Network Crayon",
+				"amount": 1,
+				"price": 206
+			},
+			{
+				"name": "Network Configurator",
+				"amount": 1,
+				"price": 298132
+			},
+			{
+				"name": "Network Wireless Configurator",
+				"amount": 1,
+				"price": 1284997
+			},
+			{
+				"name": "Network Rake 1",
+				"amount": 1,
+				"price": 163998
+			},
+			{
+				"name": "Network Rake 2",
+				"amount": 1,
+				"price": 461924
+			},
+			{
+				"name": "Network Rake 3",
+				"amount": 1,
+				"price": 1092836
+			},
+			{
+				"name": "Network Controller",
+				"amount": 1,
+				"price": 46019
+			},
+			{
+				"name": "Network Bridge",
+				"amount": 8,
+				"price": 1254
+			},
+			{
+				"name": "Network Monitor",
+				"amount": 1,
+				"price": 5250
+			},
+			{
+				"name": "Network Importer",
+				"amount": 1,
+				"price": 1339
+			},
+			{
+				"name": "Network Exporter",
+				"amount": 1,
+				"price": 13282
+			},
+			{
+				"name": "Network Grabber",
+				"amount": 1,
+				"price": 1393
+			},
+			{
+				"name": "Network Pusher",
+				"amount": 1,
+				"price": 13336
+			},
+			{
+				"name": "Network Vacuum",
+				"amount": 1,
+				"price": 33098
+			},
+			{
+				"name": "Network Vanilla Grabber",
+				"amount": 1,
+				"price": 1534
+			},
+			{
+				"name": "Network Vanilla Pusher",
+				"amount": 1,
+				"price": 13477
+			},
+			{
+				"name": "Network Wireless Transmitter",
+				"amount": 1,
+				"price": 709457
+			},
+			{
+				"name": "Network Wireless Receiver",
+				"amount": 1,
+				"price": 191175
+			},
+			{
+				"name": "Network Purger",
+				"amount": 1,
+				"price": 55
+			},
+			{
+				"name": "Network Grid",
+				"amount": 1,
+				"price": 10181
+			},
+			{
+				"name": "Network Crafting Grid",
+				"amount": 1,
+				"price": 90614
+			},
+			{
+				"name": "Network Cell",
+				"amount": 1,
+				"price": 348
+			},
+			{
+				"name": "Network Greedy Block",
+				"amount": 1,
+				"price": 55761
+			},
+			{
+				"name": "Network Capacitor 1",
+				"amount": 1,
+				"price": 17414
+			},
+			{
+				"name": "Network Capacitor 2",
+				"amount": 1,
+				"price": 169545
+			},
+			{
+				"name": "Network Capacitor 3",
+				"amount": 1,
+				"price": 1401058
+			},
+			{
+				"name": "Network Capacitor 4",
+				"amount": 1,
+				"price": 11312958
+			},
+			{
+				"name": "Network Power Outlet 1",
+				"amount": 1,
+				"price": 177
+			},
+			{
+				"name": "Network Power Outlet 2",
+				"amount": 1,
+				"price": 857
+			},
+			{
+				"name": "Network Power Display",
+				"amount": 1,
+				"price": 31540
+			},
+			{
+				"name": "Network Recipe Encoder",
+				"amount": 1,
+				"price": 31175
+			},
+			{
+				"name": "Network Auto Crafter",
+				"amount": 1,
+				"price": 67510
+			},
+			{
+				"name": "Network Auto Crafter Withholding",
+				"amount": 1,
+				"price": 122325
+			},
+			{
+				"name": "Network Quantum Workbench",
+				"amount": 1,
+				"price": 2558
+			},
+			{
+				"name": "Network Quantum Storage 4k",
+				"amount": 1,
+				"price": 4654
+			},
+			{
+				"name": "Network Quantum Storage 32k",
+				"amount": 1,
+				"price": 4891
+			},
+			{
+				"name": "Network Quantum Storage 262k",
+				"amount": 1,
+				"price": 18170
+			},
+			{
+				"name": "Network Quantum Storage 2M",
+				"amount": 1,
+				"price": 24521
+			},
+			{
+				"name": "Network Quantum Storage 16M",
+				"amount": 1,
+				"price": 52194
+			},
+			{
+				"name": "Network Quantum Storage 134M",
+				"amount": 1,
+				"price": 101891
+			},
+			{
+				"name": "Network Quantum Storage 1B",
+				"amount": 1,
+				"price": 373315
+			},
+			{
+				"name": "Network Quantum Storage ∞",
+				"amount": 1,
+				"price": 516236
+			}
+		]
+	},
+	"ecopowerGenerators": {
+		"name": "Eco-Power Generators",
+		"items": [
+			{
+				"name": "Steel Rotor",
+				"amount": 2,
+				"price": 8450
+			},
+			{
+				"name": "Simple Steam Turbine",
+				"amount": 1,
+				"price": 12329
+			},
+			{
+				"name": "Advanced Steam Turbine",
+				"amount": 1,
+				"price": 16707
+			},
+			{
+				"name": "Carbonado Steam Turbine",
+				"amount": 1,
+				"price": 55493
+			},
+			{
+				"name": "Simple Wind Turbine",
+				"amount": 1,
+				"price": 45907
+			},
+			{
+				"name": "Advanced Wind Turbine",
+				"amount": 1,
+				"price": 61999
+			},
+			{
+				"name": "Carbonado Wind Turbine",
+				"amount": 1,
+				"price": 106684
+			},
+			{
+				"name": "Lightning Receptor",
+				"amount": 1,
+				"price": 47809
+			},
+			{
+				"name": "Lunar Generator",
+				"amount": 1,
+				"price": 1360645
+			},
+			{
+				"name": "High-Energy Solar Generator",
+				"amount": 1,
+				"price": 1562774
+			},
+			{
+				"name": "High-Energy Solar Helmet",
+				"amount": 1,
+				"price": 1570274
+			},
+			{
+				"name": "Radiant Solar Generator",
+				"amount": 1,
+				"price": 4330491
+			}
+		]
+	},
+	"programovatelneAndoidy": {
+		"name": "Programovatelné andoidy",
+		"items": [
+			{
+				"name": "Andoid Interface (Items)",
+				"amount": 1,
+				"price": 3920
+			},
+			{
+				"name": "Andoid Interface (Fuel)",
+				"amount": 1,
+				"price": 3920
+			},
+			{
+				"name": "Programmable Android (Normal)",
+				"amount": 1,
+				"price": 38062
+			},
+			{
+				"name": "Programmable Android (Miner)",
+				"amount": 1,
+				"price": 45961
+			},
+			{
+				"name": "Programmable Android (Farmer)",
+				"amount": 1,
+				"price": 45961
+			},
+			{
+				"name": "Programmable Android (Woodcutter)",
+				"amount": 1,
+				"price": 45961
+			},
+			{
+				"name": "Programmable Android (Fisherman)",
+				"amount": 1,
+				"price": 44261
+			},
+			{
+				"name": "Programmable Android (Butcher)",
+				"amount": 1,
+				"price": 63309
+			},
+			{
+				"name": "Advanced Programmable Android (Normal)",
+				"amount": 1,
+				"price": 78351
+			},
+			{
+				"name": "Advanced Programmable Android (Fisherman)",
+				"amount": 1,
+				"price": 84550
+			},
+			{
+				"name": "Advanced Programmable Android (Butcher)",
+				"amount": 1,
+				"price": 103598
+			},
+			{
+				"name": "Advanced Programmable Android (Farmer)",
+				"amount": 1,
+				"price": 103598
+			},
+			{
+				"name": "Empowered Programmable Android (Normal)",
+				"amount": 1,
+				"price": 250230
+			},
+			{
+				"name": "Empowered Programmable Android (Fisherman)",
+				"amount": 1,
+				"price": 256429
+			},
+			{
+				"name": "Empowered Programmable Android (Butcher)",
+				"amount": 1,
+				"price": 550760
+			}
+		]
+	},
+	"talismanyTierI": {
+		"name": "Talismany (Tier I)",
+		"items": [
+			{
+				"name": "Talisman of the Anvil",
+				"amount": 4,
+				"price": 29070
+			},
+			{
+				"name": "Talisman of the Miner",
+				"amount": 1,
+				"price": 1213
+			},
+			{
+				"name": "Talisman of the Farmer",
+				"amount": 1,
+				"price": 3170
+			},
+			{
+				"name": "Talisman of the Hunter",
+				"amount": 1,
+				"price": 1223
+			},
+			{
+				"name": "Talisman of the Lava Walker",
+				"amount": 4,
+				"price": 1417
+			},
+			{
+				"name": "Talisman of the Water Breather",
+				"amount": 4,
+				"price": 1420
+			},
+			{
+				"name": "Talisman of the Angel",
+				"amount": 1,
+				"price": 1200
+			},
+			{
+				"name": "Talisman of the Firefighter",
+				"amount": 4,
+				"price": 1465
+			},
+			{
+				"name": "Talisman of the Magician",
+				"amount": 1,
+				"price": 6390
+			},
+			{
+				"name": "Talisman of the Traveller",
+				"amount": 1,
+				"price": 7192
+			},
+			{
+				"name": "Talisman of the Warrior",
+				"amount": 4,
+				"price": 15624
+			},
+			{
+				"name": "Talisman of the Knight",
+				"amount": 4,
+				"price": 9276
+			},
+			{
+				"name": "Talisman of the Caveman",
+				"amount": 1,
+				"price": 1438
+			},
+			{
+				"name": "Talisman of the Wise",
+				"amount": 1,
+				"price": 6574
+			},
+			{
+				"name": "Talisman of the Whirlwind",
+				"amount": 1,
+				"price": 13184
+			},
+			{
+				"name": "Talisman of the Wizard",
+				"amount": 1,
+				"price": 7142
+			}
+		]
+	},
+	"magickaZbroj": {
+		"name": "Magická zbroj",
+		"items": [
+			{
+				"name": "Ender Helmet",
+				"amount": 1,
+				"price": 227
+			},
+			{
+				"name": "Ender Chestplate",
+				"amount": 1,
+				"price": 527
+			},
+			{
+				"name": "Ender Leggings",
+				"amount": 1,
+				"price": 427
+			},
+			{
+				"name": "Ender Boots",
+				"amount": 1,
+				"price": 213
+			},
+			{
+				"name": "Slime Helmet",
+				"amount": 1,
+				"price": 1390
+			},
+			{
+				"name": "Slime Chestplate",
+				"amount": 1,
+				"price": 1880
+			},
+			{
+				"name": "Slime Leggings",
+				"amount": 1,
+				"price": 2290
+			},
+			{
+				"name": "Slime Boots",
+				"amount": 1,
+				"price": 940
+			},
+			{
+				"name": "Glowstone Helmet",
+				"amount": 1,
+				"price": 175
+			},
+			{
+				"name": "Glowstone Chestplate",
+				"amount": 1,
+				"price": 280
+			},
+			{
+				"name": "Glowstone Leggings",
+				"amount": 1,
+				"price": 245
+			},
+			{
+				"name": "Glowstone Boots",
+				"amount": 1,
+				"price": 140
+			},
+			{
+				"name": "Slime Helmet (reinforced)",
+				"amount": 1,
+				"price": 13880
+			},
+			{
+				"name": "Slime Chestplate (reinforced)",
+				"amount": 1,
+				"price": 13940
+			},
+			{
+				"name": "Slime Leggings (reinforced)",
+				"amount": 1,
+				"price": 13920
+			},
+			{
+				"name": "Slime Boots (reinforced)",
+				"amount": 1,
+				"price": 13880
+			},
+			{
+				"name": "Farmer Shoes",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Boots of the Stomper",
+				"amount": 1,
+				"price": 130
+			},
+			{
+				"name": "Soulbound Helmet",
+				"amount": 1,
+				"price": 8511
+			},
+			{
+				"name": "Soulbound Chestplate",
+				"amount": 1,
+				"price": 11511
+			},
+			{
+				"name": "Soulbound Leggings",
+				"amount": 1,
+				"price": 10511
+			},
+			{
+				"name": "Soulbound Boots",
+				"amount": 1,
+				"price": 7511
+			},
+			{
+				"name": "Bee Helmet",
+				"amount": 1,
+				"price": 6490
+			},
+			{
+				"name": "Bee Wings",
+				"amount": 1,
+				"price": 107460
+			},
+			{
+				"name": "Bee Leggings",
+				"amount": 1,
+				"price": 6560
+			},
+			{
+				"name": "Bee Boots",
+				"amount": 1,
+				"price": 6940
+			},
+			{
+				"name": "Elytra Cap",
+				"amount": 1,
+				"price": 2611
+			}
+		]
+	},
+	"danktech2": {
+		"name": "DankTech2",
+		"items": [
+			{
+				"name": "Dank Cell - Tier 1",
+				"amount": 1,
+				"price": 10015
+			},
+			{
+				"name": "Dank Cell - Tier 2",
+				"amount": 1,
+				"price": 12415
+			},
+			{
+				"name": "Dank Cell - Tier 3",
+				"amount": 1,
+				"price": 44815
+			},
+			{
+				"name": "Dank Cell - Tier 4",
+				"amount": 1,
+				"price": 66415
+			},
+			{
+				"name": "Dank Cell - Tier 5",
+				"amount": 1,
+				"price": 74415
+			},
+			{
+				"name": "Dank Cell - Tier 6",
+				"amount": 1,
+				"price": 75615
+			},
+			{
+				"name": "Dank Cell - Tier 7",
+				"amount": 1,
+				"price": 147615
+			},
+			{
+				"name": "Dank Cell - Tier 8",
+				"amount": 1,
+				"price": 158415
+			},
+			{
+				"name": "Dank Cell - Tier ☆",
+				"amount": 1,
+				"price": 238415
+			},
+			{
+				"name": "Dank Pack - Tier 1",
+				"amount": 1,
+				"price": 125120
+			},
+			{
+				"name": "Dank Pack - Tier 2",
+				"amount": 1,
+				"price": 224440
+			},
+			{
+				"name": "Dank Pack - Tier 3",
+				"amount": 1,
+				"price": 582960
+			},
+			{
+				"name": "Dank Pack - Tier 4",
+				"amount": 1,
+				"price": 1114280
+			},
+			{
+				"name": "Dank Pack - Tier 5",
+				"amount": 1,
+				"price": 1709600
+			},
+			{
+				"name": "Dank Pack - Tier 6",
+				"amount": 1,
+				"price": 2314520
+			},
+			{
+				"name": "Dank Pack - Tier 7",
+				"amount": 1,
+				"price": 3495440
+			},
+			{
+				"name": "Dank Pack - Tier 8",
+				"amount": 1,
+				"price": 4762760
+			},
+			{
+				"name": "Dank Pack - Tier 9",
+				"amount": 1,
+				"price": 6670080
+			},
+			{
+				"name": "Trash Pack - Tier 1",
+				"amount": 1,
+				"price": 85120
+			},
+			{
+				"name": "Trash Pack - Tier 2",
+				"amount": 1,
+				"price": 184440
+			},
+			{
+				"name": "Trash Pack - Tier 3",
+				"amount": 1,
+				"price": 542960
+			},
+			{
+				"name": "Trash Pack - Tier 4",
+				"amount": 1,
+				"price": 1074280
+			},
+			{
+				"name": "Trash Pack - Tier 5",
+				"amount": 1,
+				"price": 1669600
+			},
+			{
+				"name": "Trash Pack - Tier 6",
+				"amount": 1,
+				"price": 2274520
+			},
+			{
+				"name": "Trash Pack - Tier 7",
+				"amount": 1,
+				"price": 3455440
+			},
+			{
+				"name": "Trash Pack - Tier 8",
+				"amount": 1,
+				"price": 4722760
+			},
+			{
+				"name": "Trash Pack - Tier 9",
+				"amount": 1,
+				"price": 6630080
+			},
+			{
+				"name": "Dank Crafter",
+				"amount": 1,
+				"price": 96248
+			},
+			{
+				"name": "Dank Unloader",
+				"amount": 1,
+				"price": 531370
+			}
+		]
+	},
+	"zbrane": {
+		"name": "Zbraně",
+		"items": [
+			{
+				"name": "Grandmas Walking Stick",
+				"amount": 1,
+				"price": 2512
+			},
+			{
+				"name": "Grandpas Walking Stick",
+				"amount": 1,
+				"price": 2518
+			},
+			{
+				"name": "Sword of Beheading",
+				"amount": 1,
+				"price": 2815
+			},
+			{
+				"name": "Blade of Vampires",
+				"amount": 1,
+				"price": 10703
+			},
+			{
+				"name": "Seismic Axe",
+				"amount": 1,
+				"price": 9681
+			},
+			{
+				"name": "Soulbound Sword",
+				"amount": 1,
+				"price": 4511
+			},
+			{
+				"name": "Soulbound Trident",
+				"amount": 1,
+				"price": 18511
+			},
+			{
+				"name": "Soulbound Bow",
+				"amount": 1,
+				"price": 3611
+			},
+			{
+				"name": "Explosive Bow",
+				"amount": 1,
+				"price": 2978
+			},
+			{
+				"name": "Icy Bow",
+				"amount": 1,
+				"price": 2967
+			}
+		]
+	},
+	"brneni": {
+		"name": "Brnění",
+		"items": [
+			{
+				"name": "Damascus Steel Helmet",
+				"amount": 1,
+				"price": 16000
+			},
+			{
+				"name": "Damascus Steel Chestplate",
+				"amount": 1,
+				"price": 22600
+			},
+			{
+				"name": "Damascus Steel Leggings",
+				"amount": 1,
+				"price": 20400
+			},
+			{
+				"name": "Damascus Steel Boots",
+				"amount": 1,
+				"price": 13800
+			},
+			{
+				"name": "Reinforced Helmet",
+				"amount": 1,
+				"price": 60385
+			},
+			{
+				"name": "Reinforced Chestplate",
+				"amount": 1,
+				"price": 82066
+			},
+			{
+				"name": "Reinforced Leggings",
+				"amount": 1,
+				"price": 74839
+			},
+			{
+				"name": "Reinforced Boots",
+				"amount": 1,
+				"price": 53158
+			},
+			{
+				"name": "Cactus Helmet",
+				"amount": 1,
+				"price": 8257
+			},
+			{
+				"name": "Cactus Chestplate",
+				"amount": 1,
+				"price": 8262
+			},
+			{
+				"name": "Cactus Leggings",
+				"amount": 1,
+				"price": 8260
+			},
+			{
+				"name": "Cactus Boots",
+				"amount": 1,
+				"price": 8256
+			},
+			{
+				"name": "Chainmail Helmet",
+				"amount": 1,
+				"price": 2062
+			},
+			{
+				"name": "Chainmail Chestplate",
+				"amount": 1,
+				"price": 3300
+			},
+			{
+				"name": "Chainmail Leggings",
+				"amount": 1,
+				"price": 2887
+			},
+			{
+				"name": "Chainmail Boots",
+				"amount": 1,
+				"price": 1650
+			},
+			{
+				"name": "Gilded Iron Helmet",
+				"amount": 1,
+				"price": 26250
+			},
+			{
+				"name": "Gilded Iron Chestplate",
+				"amount": 1,
+				"price": 32550
+			},
+			{
+				"name": "Gilded Iron Leggings",
+				"amount": 1,
+				"price": 30450
+			},
+			{
+				"name": "Gilded Iron Boots",
+				"amount": 1,
+				"price": 24150
+			},
+			{
+				"name": "Scuba Helmet",
+				"amount": 1,
+				"price": 61
+			},
+			{
+				"name": "Hazmat Suit",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Hazmat Suit Leggings",
+				"amount": 1,
+				"price": 80
+			},
+			{
+				"name": "Hazmat Boots",
+				"amount": 1,
+				"price": 70
+			}
+		]
+	},
+	"smisenePredmety": {
+		"name": "Smíšené předměty",
+		"items": [
+			{
+				"name": "Sifted Ore",
+				"amount": 1,
+				"price": 1
+			},
+			{
+				"name": "Wheat Flour",
+				"amount": 1,
+				"price": 3
+			},
+			{
+				"name": "Steel Plate",
+				"amount": 1,
+				"price": 8800
+			},
+			{
+				"name": "Chain",
+				"amount": 1,
+				"price": 3300
+			},
+			{
+				"name": "Hook",
+				"amount": 1,
+				"price": 3300
+			},
+			{
+				"name": "Stone Chunk",
+				"amount": 1,
+				"price": 1
+			},
+			{
+				"name": "Salt",
+				"amount": 1,
+				"price": 10
+			},
+			{
+				"name": "Heavy Cream",
+				"amount": 1,
+				"price": 20
+			},
+			{
+				"name": "Cheese",
+				"amount": 1,
+				"price": 30
+			},
+			{
+				"name": "Butter",
+				"amount": 1,
+				"price": 20
+			},
+			{
+				"name": "Crushed Ore",
+				"amount": 1,
+				"price": 10
+			},
+			{
+				"name": "Pulverized Ore",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Pure Ore Cluster",
+				"amount": 1,
+				"price": 75
+			},
+			{
+				"name": "Tiny Pile of Uranium",
+				"amount": 1,
+				"price": 125
+			},
+			{
+				"name": "Small Chunk of Uranium",
+				"amount": 1,
+				"price": 150
+			},
+			{
+				"name": "Cloth",
+				"amount": 1,
+				"price": 15
+			},
+			{
+				"name": "Tin Can",
+				"amount": 1,
+				"price": 104
+			},
+			{
+				"name": "Gold Block 24-karát",
+				"amount": 1,
+				"price": 14850
+			},
+			{
+				"name": "Reinforced Plate",
+				"amount": 1,
+				"price": 57816
+			},
+			{
+				"name": "Duct Tape",
+				"amount": 1,
+				"price": 83
+			},
+			{
+				"name": "Organic Food (Wheat)",
+				"amount": 1,
+				"price": 16
+			},
+			{
+				"name": "Organic Food (Carrot)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Food (Potatoe)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Food (Seeds)",
+				"amount": 1,
+				"price": 14
+			},
+			{
+				"name": "Organic Food (Beetroot)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Food (Melon)",
+				"amount": 1,
+				"price": 23
+			},
+			{
+				"name": "Organic Food (Apple)",
+				"amount": 1,
+				"price": 23
+			},
+			{
+				"name": "Organic Food (Sweet Berries)",
+				"amount": 1,
+				"price": 93
+			},
+			{
+				"name": "Organic Food (Dried Kelp)",
+				"amount": 1,
+				"price": 23
+			},
+			{
+				"name": "Organic Food (Cocoa Beans)",
+				"amount": 1,
+				"price": 28
+			},
+			{
+				"name": "Organic Food (Seagrass)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Fertilizer (Wheat)",
+				"amount": 1,
+				"price": 26
+			},
+			{
+				"name": "Organic Fertilizer (Carrots)",
+				"amount": 1,
+				"price": 43
+			},
+			{
+				"name": "Organic Fertilizer (Potatoes)",
+				"amount": 1,
+				"price": 43
+			},
+			{
+				"name": "Organic Fertilizer (Seeds)",
+				"amount": 1,
+				"price": 24
+			},
+			{
+				"name": "Organic Fertilizer (Beetroot)",
+				"amount": 1,
+				"price": 43
+			},
+			{
+				"name": "Organic Fertilizer (Melon)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Fertilizer (Apple)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Fertilizer (Sweet Berries)",
+				"amount": 1,
+				"price": 103
+			},
+			{
+				"name": "Organic Fertilizer (Dried Kelp)",
+				"amount": 1,
+				"price": 33
+			},
+			{
+				"name": "Organic Fertilizer (Cocoa Beans)",
+				"amount": 1,
+				"price": 38
+			},
+			{
+				"name": "Organic Fertilizer (Seagrass)",
+				"amount": 1,
+				"price": 43
+			}
+		]
+	},
+	"dynatech": {
+		"name": "DynaTech",
+		"items": [
+			{
+				"name": "Stainless Steel Ingot",
+				"amount": 1,
+				"price": 911
+			},
+			{
+				"name": "Stainless Steel Rotor",
+				"amount": 1,
+				"price": 7694
+			},
+			{
+				"name": "Ancient Machine Core",
+				"amount": 1,
+				"price": 193
+			},
+			{
+				"name": "Machine Scrap",
+				"amount": 8,
+				"price": 38062
+			},
+			{
+				"name": "Advanced Machine Scrap",
+				"amount": 8,
+				"price": 78351
+			},
+			{
+				"name": "Vex Gem",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Star Dust",
+				"amount": 1,
+				"price": 7000
+			},
+			{
+				"name": "Stardust Meteor",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Ghostly Essence ",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Tesseracting Object",
+				"amount": 1,
+				"price": 3184
+			},
+			{
+				"name": "Robotic Bee",
+				"amount": 1,
+				"price": 12534
+			},
+			{
+				"name": "Advanced Robotic Bee",
+				"amount": 1,
+				"price": 75886
+			},
+			{
+				"name": "Picnic Basket",
+				"amount": 1,
+				"price": 18075
+			},
+			{
+				"name": "Electrical Stimulator",
+				"amount": 1,
+				"price": 18018
+			},
+			{
+				"name": "Scoop",
+				"amount": 1,
+				"price": 153
+			},
+			{
+				"name": "Healthy Item Band",
+				"amount": 1,
+				"price": 40700
+			},
+			{
+				"name": "Hasty Item Band",
+				"amount": 1,
+				"price": 151072
+			},
+			{
+				"name": "Tesseract Binder",
+				"amount": 1,
+				"price": 5006
+			},
+			{
+				"name": "Auto Kitchen",
+				"amount": 1,
+				"price": 35588
+			},
+			{
+				"name": "Growth Chamber",
+				"amount": 1,
+				"price": 194623
+			},
+			{
+				"name": "Growth Chamber Mk 2",
+				"amount": 1,
+				"price": 424469
+			},
+			{
+				"name": "End Growth Chamber",
+				"amount": 1,
+				"price": 204048
+			},
+			{
+				"name": "End Growth Chamber Mk 2",
+				"amount": 1,
+				"price": 443422
+			},
+			{
+				"name": "Nether Growth Chamber",
+				"amount": 1,
+				"price": 203703
+			},
+			{
+				"name": "Nether Growth Chamber Mk 2",
+				"amount": 1,
+				"price": 442617
+			},
+			{
+				"name": "Ocean Growth Chamber",
+				"amount": 1,
+				"price": 204094
+			},
+			{
+				"name": "Ocean Growth Chamber Mk 2",
+				"amount": 1,
+				"price": 443411
+			},
+			{
+				"name": "Weather Controller ",
+				"amount": 1,
+				"price": 5415
+			},
+			{
+				"name": "Potion Sprinkler",
+				"amount": 1,
+				"price": 3496
+			},
+			{
+				"name": "Barbed Wire",
+				"amount": 1,
+				"price": 2390
+			},
+			{
+				"name": "Material Hive",
+				"amount": 1,
+				"price": 43142
+			},
+			{
+				"name": "Wireless Charger",
+				"amount": 1,
+				"price": 44163
+			},
+			{
+				"name": "Seed Plucker",
+				"amount": 1,
+				"price": 10079
+			},
+			{
+				"name": "Item Band Manager",
+				"amount": 1,
+				"price": 3899
+			},
+			{
+				"name": "Orechid",
+				"amount": 1,
+				"price": 19632
+			},
+			{
+				"name": "Wireless Energy Bank",
+				"amount": 1,
+				"price": 226670
+			},
+			{
+				"name": "Wireless Energy Point",
+				"amount": 1,
+				"price": 1070
+			},
+			{
+				"name": "Wireless Item Input",
+				"amount": 1,
+				"price": 3340
+			},
+			{
+				"name": "Wireless Item Output",
+				"amount": 1,
+				"price": 75477
+			},
+			{
+				"name": "Tesseract",
+				"amount": 1,
+				"price": 319395
+			},
+			{
+				"name": "External Heater",
+				"amount": 1,
+				"price": 19329
+			},
+			{
+				"name": "Hydro Generator",
+				"amount": 1,
+				"price": 15570
+			},
+			{
+				"name": "Hydro Turbine",
+				"amount": 1,
+				"price": 68731
+			},
+			{
+				"name": "Dragon Egg Generator",
+				"amount": 1,
+				"price": 17839
+			},
+			{
+				"name": "Chipping Generator",
+				"amount": 1,
+				"price": 7659
+			},
+			{
+				"name": "Culinary Generator",
+				"amount": 1,
+				"price": 9102
+			},
+			{
+				"name": "Stardust Reactor",
+				"amount": 1,
+				"price": 168824
+			}
+		]
+	},
+	"slimyTreetaps": {
+		"name": "Slimy TreeTaps",
+		"items": [
+			{
+				"name": "Tree Tap",
+				"amount": 1,
+				"price": 4422
+			},
+			{
+				"name": "Reinforced Tree Tap",
+				"amount": 1,
+				"price": 12589
+			},
+			{
+				"name": "Diamond Tree Tap",
+				"amount": 1,
+				"price": 27428
+			},
+			{
+				"name": "Tree Scraper",
+				"amount": 1,
+				"price": 5059
+			},
+			{
+				"name": "Rubber Factory",
+				"amount": 1,
+				"price": 60900
+			},
+			{
+				"name": "Resin Extractor",
+				"amount": 1,
+				"price": 116257
+			},
+			{
+				"name": "Resin Extractor (II)",
+				"amount": 1,
+				"price": 174614
+			},
+			{
+				"name": "Raw Plastic",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Rubber",
+				"amount": 1,
+				"price": 150
+			},
+			{
+				"name": "Amber",
+				"amount": 1,
+				"price": 400
+			},
+			{
+				"name": "Block of Amber",
+				"amount": 1,
+				"price": 900
+			},
+			{
+				"name": "Blue Ender Pearl",
+				"amount": 1,
+				"price": 4152
+			},
+			{
+				"name": "Magical Mirror (Unbound)",
+				"amount": 1,
+				"price": 5756
+			}
+		]
+	},
+	"soundmuffler": {
+		"name": "SoundMuffler",
+		"items": [
+			{
+				"name": "Sound Muffler",
+				"amount": 1,
+				"price": 41159
+			}
+		]
+	},
+	"extragear": {
+		"name": "ExtraGear",
+		"items": [
+			{
+				"name": "Copper Sword",
+				"amount": 1,
+				"price": 2527
+			},
+			{
+				"name": "Copper Helmet",
+				"amount": 1,
+				"price": 2565
+			},
+			{
+				"name": "Copper Chestplate",
+				"amount": 1,
+				"price": 2604
+			},
+			{
+				"name": "Copper Leggings",
+				"amount": 1,
+				"price": 2591
+			},
+			{
+				"name": "Copper Boots",
+				"amount": 1,
+				"price": 2552
+			},
+			{
+				"name": "Tin Sword",
+				"amount": 1,
+				"price": 2527
+			},
+			{
+				"name": "Tin Helmet",
+				"amount": 1,
+				"price": 2565
+			},
+			{
+				"name": "Tin Chestplate",
+				"amount": 1,
+				"price": 2604
+			},
+			{
+				"name": "Tin Leggings",
+				"amount": 1,
+				"price": 2591
+			},
+			{
+				"name": "Tin Boots",
+				"amount": 1,
+				"price": 2552
+			},
+			{
+				"name": "Silver Sword",
+				"amount": 1,
+				"price": 2527
+			},
+			{
+				"name": "Silver Helmet",
+				"amount": 1,
+				"price": 2565
+			},
+			{
+				"name": "Silver Chestplate",
+				"amount": 1,
+				"price": 2604
+			},
+			{
+				"name": "Silver Leggings",
+				"amount": 1,
+				"price": 2591
+			},
+			{
+				"name": "Silver Boots",
+				"amount": 1,
+				"price": 2552
+			},
+			{
+				"name": "Aluminum Sword",
+				"amount": 1,
+				"price": 2527
+			},
+			{
+				"name": "Aluminum Helmet",
+				"amount": 1,
+				"price": 2565
+			},
+			{
+				"name": "Aluminum Chestplate",
+				"amount": 1,
+				"price": 2604
+			},
+			{
+				"name": "Aluminum Leggings",
+				"amount": 1,
+				"price": 2591
+			},
+			{
+				"name": "Aluminum Boots",
+				"amount": 1,
+				"price": 2552
+			},
+			{
+				"name": "Lead Sword",
+				"amount": 1,
+				"price": 12527
+			},
+			{
+				"name": "Lead Helmet",
+				"amount": 1,
+				"price": 12565
+			},
+			{
+				"name": "Lead Chestplate",
+				"amount": 1,
+				"price": 12604
+			},
+			{
+				"name": "Lead Leggings",
+				"amount": 1,
+				"price": 12591
+			},
+			{
+				"name": "Lead Boots",
+				"amount": 1,
+				"price": 12552
+			},
+			{
+				"name": "Zinc Sword",
+				"amount": 1,
+				"price": 2527
+			},
+			{
+				"name": "Zinc Helmet",
+				"amount": 1,
+				"price": 2565
+			},
+			{
+				"name": "Zinc Chestplate",
+				"amount": 1,
+				"price": 2604
+			},
+			{
+				"name": "Zinc Leggings",
+				"amount": 1,
+				"price": 2591
+			},
+			{
+				"name": "Zinc Boots",
+				"amount": 1,
+				"price": 2552
+			},
+			{
+				"name": "Magnesium Sword",
+				"amount": 1,
+				"price": 5027
+			},
+			{
+				"name": "Magnesium Helmet",
+				"amount": 1,
+				"price": 5065
+			},
+			{
+				"name": "Magnesium Chestplate",
+				"amount": 1,
+				"price": 5104
+			},
+			{
+				"name": "Magnesium Leggings",
+				"amount": 1,
+				"price": 5091
+			},
+			{
+				"name": "Magnesium Boots",
+				"amount": 1,
+				"price": 5052
+			},
+			{
+				"name": "Steel Sword",
+				"amount": 1,
+				"price": 10451
+			},
+			{
+				"name": "Steel Helmet",
+				"amount": 1,
+				"price": 10500
+			},
+			{
+				"name": "Steel Chestplate",
+				"amount": 1,
+				"price": 13800
+			},
+			{
+				"name": "Steel Leggings",
+				"amount": 1,
+				"price": 12700
+			},
+			{
+				"name": "Steel Boots",
+				"amount": 1,
+				"price": 9400
+			},
+			{
+				"name": "Bronze Sword",
+				"amount": 1,
+				"price": 8325
+			},
+			{
+				"name": "Duralium Sword",
+				"amount": 1,
+				"price": 8325
+			},
+			{
+				"name": "Billon Sword",
+				"amount": 1,
+				"price": 5075
+			},
+			{
+				"name": "Brass Sword",
+				"amount": 1,
+				"price": 8325
+			},
+			{
+				"name": "Aluminum Brass Sword",
+				"amount": 1,
+				"price": 5125
+			},
+			{
+				"name": "Aluminum Bronze Sword",
+				"amount": 1,
+				"price": 5125
+			},
+			{
+				"name": "Corinthian Bronze Sword",
+				"amount": 1,
+				"price": 5421
+			},
+			{
+				"name": "Solder Sword",
+				"amount": 1,
+				"price": 8325
+			},
+			{
+				"name": "Damascus Steel Sword",
+				"amount": 1,
+				"price": 18026
+			},
+			{
+				"name": "Hardened Sword",
+				"amount": 1,
+				"price": 28312
+			},
+			{
+				"name": "Reinforced Sword",
+				"amount": 1,
+				"price": 34455
+			},
+			{
+				"name": "Ferrosilicon Sword",
+				"amount": 1,
+				"price": 14325
+			},
+			{
+				"name": "Gilded Iron Sword",
+				"amount": 1,
+				"price": 28451
+			},
+			{
+				"name": "Nickel Sword",
+				"amount": 1,
+				"price": 10075
+			},
+			{
+				"name": "Cobalt Sword",
+				"amount": 1,
+				"price": 19697
+			},
+			{
+				"name": "Cobalt Helmet",
+				"amount": 1,
+				"price": 25615
+			},
+			{
+				"name": "Cobalt Chestplate",
+				"amount": 1,
+				"price": 31534
+			},
+			{
+				"name": "Cobalt Leggings",
+				"amount": 1,
+				"price": 29561
+			},
+			{
+				"name": "Cobalt Boots",
+				"amount": 1,
+				"price": 23642
+			}
+		]
+	},
+	"enchanty": {
+		"name": "Enchanty",
+		"items": [
+			{
+				"name": "Mending",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Aqua Affinity",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Curse Of Vanishing",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Currse Of Binding",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Channeling",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Flame",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Infinity",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Multishot",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Silk touch",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 1-5",
+				"amount": 1,
+				"price": 2500
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 6",
+				"amount": 1,
+				"price": 5750
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 7",
+				"amount": 1,
+				"price": 7875
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 8",
+				"amount": 1,
+				"price": 10000
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 9",
+				"amount": 1,
+				"price": 12125
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 10",
+				"amount": 1,
+				"price": 14250
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 11",
+				"amount": 1,
+				"price": 16375
+			},
+			{
+				"name": "Všechny ostatní enchanty lvl 12",
+				"amount": 1,
+				"price": 18500
+			}
+		]
+	},
+	"technickeKomponenty": {
+		"name": "Technické komponenty",
+		"items": [
+			{
+				"name": "Basic Circuit Board",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Advanced Circuit Board",
+				"amount": 1,
+				"price": 1180
+			},
+			{
+				"name": "Battery",
+				"amount": 1,
+				"price": 77
+			},
+			{
+				"name": "Steel Thruster",
+				"amount": 1,
+				"price": 17889
+			},
+			{
+				"name": "Power Crystal",
+				"amount": 1,
+				"price": 6595
+			},
+			{
+				"name": "Photovoltaic Cell",
+				"amount": 1,
+				"price": 3303
+			},
+			{
+				"name": "Reinforced Cloth",
+				"amount": 2,
+				"price": 20
+			},
+			{
+				"name": "Magnet",
+				"amount": 1,
+				"price": 2907
+			},
+			{
+				"name": "Electromagnet",
+				"amount": 1,
+				"price": 5869
+			},
+			{
+				"name": "Electric Motor",
+				"amount": 1,
+				"price": 5899
+			},
+			{
+				"name": "Heating Coil",
+				"amount": 1,
+				"price": 5938
+			},
+			{
+				"name": "Copper Wire",
+				"amount": 8,
+				"price": 39
+			},
+			{
+				"name": "Hardened Glass",
+				"amount": 16,
+				"price": 57824
+			},
+			{
+				"name": "Cooling Unit",
+				"amount": 1,
+				"price": 6015
+			},
+			{
+				"name": "Wither-Proof Obsidian",
+				"amount": 4,
+				"price": 4066
+			},
+			{
+				"name": "Plastic Sheet",
+				"amount": 8,
+				"price": 1000
+			},
+			{
+				"name": "Android Memory Core",
+				"amount": 1,
+				"price": 13282
+			},
+			{
+				"name": "Wither-Proof Glass",
+				"amount": 4,
+				"price": 7732
+			},
+			{
+				"name": "Reactor Coolant Cell",
+				"amount": 1,
+				"price": 100
+			},
+			{
+				"name": "Nether Ice Coolant Cell",
+				"amount": 8,
+				"price": 275
+			}
+		]
+	},
+	"transcendence": {
+		"name": "TranscEndence",
+		"items": [
+			{
+				"name": "Quirp Up",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Quirp Down",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Quirp Left",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Quirp Right",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Quirp Condensate",
+				"amount": 1,
+				"price": 500
+			},
+			{
+				"name": "Unstable Ingot 25%",
+				"amount": 1,
+				"price": 17300
+			},
+			{
+				"name": "Unstable Ingot 50%",
+				"amount": 1,
+				"price": 16800
+			},
+			{
+				"name": "Unstable Ingot 75%",
+				"amount": 1,
+				"price": 16300
+			},
+			{
+				"name": "Unstable Ingot",
+				"amount": 1,
+				"price": 15800
+			},
+			{
+				"name": "Stable Ingot",
+				"amount": 1,
+				"price": 17800
+			},
+			{
+				"name": "Stable Block",
+				"amount": 1,
+				"price": 160200
+			},
+			{
+				"name": "Zot Up",
+				"amount": 1,
+				"price": 161800
+			},
+			{
+				"name": "Zot Down",
+				"amount": 1,
+				"price": 161800
+			},
+			{
+				"name": "Zot Left",
+				"amount": 1,
+				"price": 161800
+			},
+			{
+				"name": "Zot Right",
+				"amount": 1,
+				"price": 161800
+			},
+			{
+				"name": "Quirp Scatterer",
+				"amount": 1,
+				"price": 3300
+			},
+			{
+				"name": "Quirp Oscillator",
+				"amount": 1,
+				"price": 197045
+			},
+			{
+				"name": "Daxi (S)",
+				"amount": 1,
+				"price": 1305800
+			},
+			{
+				"name": "Daxi (A)",
+				"amount": 1,
+				"price": 1305800
+			},
+			{
+				"name": "Daxi (F)",
+				"amount": 1,
+				"price": 1305800
+			},
+			{
+				"name": "Daxi (H)",
+				"amount": 1,
+				"price": 1305800
+			},
+			{
+				"name": "Daxi (R)",
+				"amount": 1,
+				"price": 1305800
+			},
+			{
+				"name": "Vertical Polarizer",
+				"amount": 1,
+				"price": 1850
+			},
+			{
+				"name": "Horizontal Polarizer",
+				"amount": 1,
+				"price": 1850
+			},
+			{
+				"name": "Quirp Annihilator",
+				"amount": 1,
+				"price": 50940
+			},
+			{
+				"name": "Quirp Cycler",
+				"amount": 1,
+				"price": 199845
+			},
+			{
+				"name": "Stabilizer",
+				"amount": 1,
+				"price": 18600
+			},
+			{
+				"name": "Zot Overloader",
+				"amount": 1,
+				"price": 163000
+			}
+		]
+	},
+	"infinityExpansion": {
+		"name": "Infinity Expansion",
+		"items": [
+			{
+				"name": "Single Compressed Cobblestone",
+				"amount": 1,
+				"price": 9
+			},
+			{
+				"name": "Double Compressed Cobblestone",
+				"amount": 1,
+				"price": 81
+			},
+			{
+				"name": "Triple Compressed Cobblestone",
+				"amount": 1,
+				"price": 729
+			},
+			{
+				"name": "Quadruple Compressed Cobblestone",
+				"amount": 1,
+				"price": 6561
+			},
+			{
+				"name": "Quintuple Compressed Cobblestone",
+				"amount": 1,
+				"price": 59049
+			},
+			{
+				"name": "Void Bit",
+				"amount": 1,
+				"price": 86
+			},
+			{
+				"name": "Void Dust",
+				"amount": 1,
+				"price": 777
+			},
+			{
+				"name": "Void Ingot",
+				"amount": 1,
+				"price": 7000
+			},
+			{
+				"name": "Infinity Ingot",
+				"amount": 1,
+				"price": 158000000
+			},
+			{
+				"name": "Fortune Singularity",
+				"amount": 1,
+				"price": 99067355
+			},
+			{
+				"name": "Magic Singularity",
+				"amount": 1,
+				"price": 6343324
+			},
+			{
+				"name": "Earth Singularity",
+				"amount": 1,
+				"price": 25786061
+			},
+			{
+				"name": "Metal Singularity",
+				"amount": 1,
+				"price": 4685124
+			},
+			{
+				"name": "MagSteel",
+				"amount": 1,
+				"price": 1124
+			},
+			{
+				"name": "Titanium",
+				"amount": 1,
+				"price": 6793
+			},
+			{
+				"name": "Mythril",
+				"amount": 1,
+				"price": 22504593
+			},
+			{
+				"name": "Adamantite",
+				"amount": 1,
+				"price": 16655355
+			},
+			{
+				"name": "Magnonium",
+				"amount": 1,
+				"price": 1172324
+			},
+			{
+				"name": "MagSteel Plate",
+				"amount": 1,
+				"price": 12085
+			},
+			{
+				"name": "Machine Circuit",
+				"amount": 1,
+				"price": 11916
+			},
+			{
+				"name": "Machine Core",
+				"amount": 1,
+				"price": 135799
+			},
+			{
+				"name": "Machine Plate",
+				"amount": 1,
+				"price": 60963
+			},
+			{
+				"name": "[Redstone Dust] Oscillator",
+				"amount": 1,
+				"price": 249892
+			},
+			{
+				"name": "[Lapis Lazuli] Oscillator",
+				"amount": 1,
+				"price": 249867
+			},
+			{
+				"name": "[Emerald] Oscillator",
+				"amount": 1,
+				"price": 250002
+			},
+			{
+				"name": "[Diamond] Oscillator",
+				"amount": 1,
+				"price": 250852
+			},
+			{
+				"name": "[Nether Quartz] Oscillator",
+				"amount": 1,
+				"price": 249877
+			},
+			{
+				"name": "Ender Flame",
+				"amount": 1,
+				"price": 1650
+			},
+			{
+				"name": "Vein Miner Rune",
+				"amount": 1,
+				"price": 71080
+			},
+			{
+				"name": "Advanced Anvil",
+				"amount": 1,
+				"price": 478396
+			},
+			{
+				"name": "Infinity Workbench",
+				"amount": 1,
+				"price": 501568
+			},
+			{
+				"name": "Basic Strainer",
+				"amount": 1,
+				"price": 12
+			},
+			{
+				"name": "Advanced Strainer",
+				"amount": 1,
+				"price": 4515
+			},
+			{
+				"name": "Reinforced Strainer",
+				"amount": 1,
+				"price": 10522
+			},
+			{
+				"name": "Basic Cobble Generator",
+				"amount": 1,
+				"price": 17893
+			},
+			{
+				"name": "Basic Virtual Farm",
+				"amount": 1,
+				"price": 27084
+			},
+			{
+				"name": "Basic Tree Grower",
+				"amount": 1,
+				"price": 26087
+			},
+			{
+				"name": "Strainer Base",
+				"amount": 1,
+				"price": 3380
+			},
+			{
+				"name": "Hydro Generator",
+				"amount": 1,
+				"price": 34597
+			},
+			{
+				"name": "Basic Solar Panel",
+				"amount": 1,
+				"price": 59990
+			},
+			{
+				"name": "Void Harvester",
+				"amount": 1,
+				"price": 357954
+			},
+			{
+				"name": "Stoneworks Factory",
+				"amount": 1,
+				"price": 181251
+			},
+			{
+				"name": "Singularity Constructor",
+				"amount": 1,
+				"price": 420424
+			},
+			{
+				"name": "Resource Synthesizer",
+				"amount": 1,
+				"price": 50543816
+			},
+			{
+				"name": "Advanced Cobble Generator",
+				"amount": 1,
+				"price": 84917
+			},
+			{
+				"name": "Obsidian Generator",
+				"amount": 1,
+				"price": 260132
+			},
+			{
+				"name": "Advanced Virtual Farm",
+				"amount": 1,
+				"price": 2542205
+			},
+			{
+				"name": "Advanced Tree Grower",
+				"amount": 1,
+				"price": 2541208
+			},
+			{
+				"name": "Extreme Freezer",
+				"amount": 1,
+				"price": 385826
+			},
+			{
+				"name": "Dust Extractor",
+				"amount": 1,
+				"price": 361949
+			},
+			{
+				"name": "Cobble Press",
+				"amount": 1,
+				"price": 456902
+			},
+			{
+				"name": "Ingot Former",
+				"amount": 1,
+				"price": 461647
+			},
+			{
+				"name": "Uranium Extractor",
+				"amount": 1,
+				"price": 347056
+			},
+			{
+				"name": "Decompressor",
+				"amount": 1,
+				"price": 266516
+			},
+			{
+				"name": "Gear Transformer",
+				"amount": 1,
+				"price": 96054
+			},
+			{
+				"name": "Geo Quarry",
+				"amount": 1,
+				"price": 579242
+			},
+			{
+				"name": "Basic Quarry",
+				"amount": 1,
+				"price": 344509
+			},
+			{
+				"name": "Advanced Quarry",
+				"amount": 1,
+				"price": 706129
+			},
+			{
+				"name": "Void Quarry",
+				"amount": 1,
+				"price": 5109580
+			},
+			{
+				"name": "Reinforced Hydro Gen",
+				"amount": 1,
+				"price": 322189
+			},
+			{
+				"name": "Geothermal Generator",
+				"amount": 1,
+				"price": 305527
+			},
+			{
+				"name": "Reinforced Geothermal Generator",
+				"amount": 1,
+				"price": 1503668
+			},
+			{
+				"name": "Advanced Solar Panel",
+				"amount": 1,
+				"price": 1546927
+			},
+			{
+				"name": "Celestial Panel",
+				"amount": 1,
+				"price": 4983302
+			},
+			{
+				"name": "Void Panel",
+				"amount": 1,
+				"price": 18487880
+			},
+			{
+				"name": "Void Capacitor",
+				"amount": 1,
+				"price": 4217819
+			},
+			{
+				"name": "Advanced Enchanter",
+				"amount": 1,
+				"price": 221329
+			},
+			{
+				"name": "Advanced Disenchanter",
+				"amount": 1,
+				"price": 261850
+			},
+			{
+				"name": "Advanced Charger",
+				"amount": 1,
+				"price": 233906
+			},
+			{
+				"name": "Advanced GeoMiner",
+				"amount": 1,
+				"price": 307390
+			},
+			{
+				"name": "Advanced Nether Star Reactor",
+				"amount": 1,
+				"price": 199589
+			},
+			{
+				"name": "Advanced Smeltery",
+				"amount": 1,
+				"price": 707282
+			},
+			{
+				"name": "Storage Forge",
+				"amount": 1,
+				"price": 86514
+			},
+			{
+				"name": "Basic Storage Unit",
+				"amount": 1,
+				"price": 2322
+			},
+			{
+				"name": "Advanced Storage Unit",
+				"amount": 1,
+				"price": 32898
+			},
+			{
+				"name": "Reinforced Storage Unit",
+				"amount": 1,
+				"price": 178287
+			},
+			{
+				"name": "Void Storage Unit",
+				"amount": 1,
+				"price": 2747697
+			},
+			{
+				"name": "Infinity Storage Unit",
+				"amount": 1,
+				"price": 950761697
+			},
+			{
+				"name": "Mob Simulation Chamber",
+				"amount": 1,
+				"price": 257407
+			},
+			{
+				"name": "Mob Data Infuser",
+				"amount": 1,
+				"price": 189463
+			},
+			{
+				"name": "Empty Data Card",
+				"amount": 1,
+				"price": 30409
+			},
+			{
+				"name": "Copper Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Zinc Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Tin Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Aluminum Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Silver Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Magnesium Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Lead Singularity",
+				"amount": 1,
+				"price": 1171000
+			},
+			{
+				"name": "Gold Singularity",
+				"amount": 1,
+				"price": 29970000
+			},
+			{
+				"name": "Iron Singularity",
+				"amount": 1,
+				"price": 22500000
+			},
+			{
+				"name": "Diamond Singularity",
+				"amount": 1,
+				"price": 16650000
+			},
+			{
+				"name": "Emerald Singularity",
+				"amount": 1,
+				"price": 2497000
+			},
+			{
+				"name": "Netherite Singularity",
+				"amount": 1,
+				"price": 33295000
+			},
+			{
+				"name": "Coal Singularity",
+				"amount": 1,
+				"price": 937500
+			},
+			{
+				"name": "Redstone Singularity",
+				"amount": 1,
+				"price": 2000000
+			},
+			{
+				"name": "Lapis Singularity",
+				"amount": 1,
+				"price": 750000
+			},
+			{
+				"name": "Quartz Singularity",
+				"amount": 1,
+				"price": 1250000
+			},
+			{
+				"name": "Infinity Singularity",
+				"amount": 1,
+				"price": 395000000000
+			},
+			{
+				"name": "Infinity Machine Circuit",
+				"amount": 1,
+				"price": 1264274656
+			},
+			{
+				"name": "Infinity Machine Core",
+				"amount": 1,
+				"price": 1897669424
+			},
+			{
+				"name": "Infinite Void Harvester",
+				"amount": 1,
+				"price": 2539459369
+			},
+			{
+				"name": "Infinity Constructor",
+				"amount": 1,
+				"price": 7589855711
+			},
+			{
+				"name": "Powered Bedrock",
+				"amount": 1,
+				"price": 3163776550
+			},
+			{
+				"name": "Infinity Cobble Generator",
+				"amount": 1,
+				"price": 1498672
+			},
+			{
+				"name": "Infinity Virtual Farm",
+				"amount": 1,
+				"price": 6329478774
+			},
+			{
+				"name": "Infinity Tree Grower",
+				"amount": 1,
+				"price": 6329431933
+			},
+			{
+				"name": "Infinity Dust Extractor",
+				"amount": 1,
+				"price": 3794861006
+			},
+			{
+				"name": "Infinity Ingot Former",
+				"amount": 1,
+				"price": 5062248730
+			},
+			{
+				"name": "Infinity Quarry",
+				"amount": 1,
+				"price": 9810735024
+			},
+			{
+				"name": "Infinity Crown",
+				"amount": 1,
+				"price": 2528014000
+			},
+			{
+				"name": "Infinity Chestplate",
+				"amount": 1,
+				"price": 3160056000
+			},
+			{
+				"name": "Infinity Leggings",
+				"amount": 1,
+				"price": 2844042000
+			},
+			{
+				"name": "Infinity Boots",
+				"amount": 1,
+				"price": 2528028000
+			},
+			{
+				"name": "Cosmic Aegis",
+				"amount": 1,
+				"price": 3160070000
+			},
+			{
+				"name": "Sky Piercer",
+				"amount": 1,
+				"price": 1580050650
+			},
+			{
+				"name": "Nature's Ruin",
+				"amount": 1,
+				"price": 2212063000
+			},
+			{
+				"name": "Blade of the Cosmos",
+				"amount": 1,
+				"price": 1738035000
+			},
+			{
+				"name": "Mountain Eater",
+				"amount": 1,
+				"price": 1896028000
+			},
+			{
+				"name": "World Breaker",
+				"amount": 1,
+				"price": 1264049000
+			},
+			{
+				"name": "Infinity Reactor",
+				"amount": 1,
+				"price": 8852910969
+			},
+			{
+				"name": "Infinity Panel",
+				"amount": 1,
+				"price": 8706615078
+			},
+			{
+				"name": "Infinite Capacitor",
+				"amount": 1,
+				"price": 6953829901
+			},
+			{
+				"name": "Infinity Enchanter",
+				"amount": 1,
+				"price": 6956766597
+			},
+			{
+				"name": "Infinity Disenchanter",
+				"amount": 1,
+				"price": 6956847639
+			},
+			{
+				"name": "Infinity Charger",
+				"amount": 1,
+				"price": 7272975115
+			},
+			{
+				"name": "Ender Essence",
+				"amount": 1,
+				"price": 500
+			}
+		]
+	},
+	"foxyMachines": {
+		"name": "Foxy Machines",
+		"items": [
+			{
+				"name": "Magical Lump - IV",
+				"amount": 1,
+				"price": 96
+			},
+			{
+				"name": "Magical Lump - V",
+				"amount": 1,
+				"price": 384
+			},
+			{
+				"name": "Reinforced String",
+				"amount": 1,
+				"price": 6009
+			},
+			{
+				"name": "Stabilizer Blistering Block",
+				"amount": 1,
+				"price": 19872
+			},
+			{
+				"name": "Forcefield Engine",
+				"amount": 1,
+				"price": 123265
+			},
+			{
+				"name": "Forcefield Stabilizer",
+				"amount": 1,
+				"price": 111087
+			},
+			{
+				"name": "Wireless Transmitter",
+				"amount": 1,
+				"price": 50953
+			},
+			{
+				"name": "Nuclear Salt",
+				"amount": 1,
+				"price": 8010
+			},
+			{
+				"name": "Compressed Sponge",
+				"amount": 1,
+				"price": 6000
+			},
+			{
+				"name": "Demonic Ingot",
+				"amount": 1,
+				"price": 3624
+			},
+			{
+				"name": "Aquatic Netherite Ingot",
+				"amount": 1,
+				"price": 8400
+			},
+			{
+				"name": "Damienium",
+				"amount": 1,
+				"price": 7303
+			},
+			{
+				"name": "Sweet Ingot",
+				"amount": 1,
+				"price": 4845
+			},
+			{
+				"name": "Sweetened Sweet Ingot",
+				"amount": 1,
+				"price": 9621
+			},
+			{
+				"name": "Demonic Plate",
+				"amount": 1,
+				"price": 28997
+			},
+			{
+				"name": "Aquatic Helmet Frame",
+				"amount": 1,
+				"price": 42000
+			},
+			{
+				"name": "Resistand Chestplate Frame",
+				"amount": 1,
+				"price": 36354
+			},
+			{
+				"name": "Fiery Leggings Frame",
+				"amount": 1,
+				"price": 36407
+			},
+			{
+				"name": "Lights Boots Frame",
+				"amount": 1,
+				"price": 33848
+			},
+			{
+				"name": "Poseidon´s Blessing",
+				"amount": 1,
+				"price": 5000
+			},
+			{
+				"name": "Blood Infused Skull",
+				"amount": 1,
+				"price": 1084
+			},
+			{
+				"name": "Purified Bone",
+				"amount": 1,
+				"price": 210
+			},
+			{
+				"name": "Pure Bone Dust",
+				"amount": 1,
+				"price": 1260
+			},
+			{
+				"name": "Bucket of Blood",
+				"amount": 1,
+				"price": 600
+			},
+			{
+				"name": "Cursed Shard",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Celestial Shard",
+				"amount": 1,
+				"price": 1500
+			},
+			{
+				"name": "Equanimous Gem",
+				"amount": 1,
+				"price": 10150
+			},
+			{
+				"name": "Improvement Core",
+				"amount": 1,
+				"price": 35036
+			},
+			{
+				"name": "Improvement Forge",
+				"amount": 1,
+				"price": 98616
+			},
+			{
+				"name": "Potion Mixer",
+				"amount": 1,
+				"price": 60770
+			},
+			{
+				"name": "Electric Gold Refinery",
+				"amount": 1,
+				"price": 108082
+			},
+			{
+				"name": "Forcefield Dome",
+				"amount": 1,
+				"price": 606097
+			},
+			{
+				"name": "Ancient Rune [Unbreakable]",
+				"amount": 1,
+				"price": 34023
+			},
+			{
+				"name": "Poseidon's Fishing Rod",
+				"amount": 1,
+				"price": 35209
+			},
+			{
+				"name": "Electric Wind Staff",
+				"amount": 1,
+				"price": 38701
+			},
+			{
+				"name": "Electric Fire Staff",
+				"amount": 1,
+				"price": 42088
+			},
+			{
+				"name": "Electric Fire Staff - II",
+				"amount": 1,
+				"price": 106582
+			},
+			{
+				"name": "Boosted Rail",
+				"amount": 4,
+				"price": 88
+			},
+			{
+				"name": "Boosted Activator Rail",
+				"amount": 4,
+				"price": 531
+			},
+			{
+				"name": "Boosted Detector Rail",
+				"amount": 4,
+				"price": 251
+			},
+			{
+				"name": "Boosted Powered Rail",
+				"amount": 4,
+				"price": 15778
+			},
+			{
+				"name": "Sweet Berry Bush Trimmer",
+				"amount": 1,
+				"price": 8801
+			},
+			{
+				"name": "Ghost Block Remover",
+				"amount": 1,
+				"price": 53608
+			},
+			{
+				"name": "Remote Controller",
+				"amount": 1,
+				"price": 196677
+			},
+			{
+				"name": "Position Selector",
+				"amount": 1,
+				"price": 101191
+			},
+			{
+				"name": "Fill Wand",
+				"amount": 1,
+				"price": 274294
+			},
+			{
+				"name": "Sponge Wand",
+				"amount": 1,
+				"price": 225339
+			},
+			{
+				"name": "Healing Bow",
+				"amount": 1,
+				"price": 39027
+			},
+			{
+				"name": "Acri Arcum",
+				"amount": 1,
+				"price": 99895
+			},
+			{
+				"name": "Cursed Sword",
+				"amount": 1,
+				"price": 8102
+			},
+			{
+				"name": "Celestial Sword",
+				"amount": 1,
+				"price": 20056
+			},
+			{
+				"name": "Elucidator",
+				"amount": 1,
+				"price": 98955
+			},
+			{
+				"name": "Aquatic Helmet",
+				"amount": 1,
+				"price": 83468
+			},
+			{
+				"name": "Resistand Chestplate",
+				"amount": 1,
+				"price": 77822
+			},
+			{
+				"name": "Fiery Leggings",
+				"amount": 1,
+				"price": 77875
+			},
+			{
+				"name": "Light Boots",
+				"amount": 1,
+				"price": 75316
+			},
+			{
+				"name": "Blood ",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Cursed Rabbit Paw",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Human Skull",
+				"amount": 1,
+				"price": 500
+			},
+			{
+				"name": "Tropical Fish Scale",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Polar Fox Hide",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Magma Essence",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Parrot Feather",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Unholy Wither Skeleton Bone",
+				"amount": 1,
+				"price": 50
+			},
+			{
+				"name": "Sacrificial Blackstone Bricks",
+				"amount": 8,
+				"price": 12320
+			},
+			{
+				"name": "Sacrificial Blackstone Brick Stairs",
+				"amount": 4,
+				"price": 9240
+			},
+			{
+				"name": "Sacrificial Blackstone Brick Wall",
+				"amount": 4,
+				"price": 9240
+			},
+			{
+				"name": "Sacrificial Soul Torch",
+				"amount": 1,
+				"price": 391
+			},
+			{
+				"name": "Sacrificial Mat",
+				"amount": 1,
+				"price": 188
+			}
+		]
+	},
+	"fluffyMachines": {
+		"name": "Fluffy Machines",
+		"items": [
+			{
+				"name": "Generator Core",
+				"amount": 1,
+				"price": 10199
+			},
+			{
+				"name": "Water Sprinkler",
+				"amount": 1,
+				"price": 16893
+			},
+			{
+				"name": "Auto Crafting Table",
+				"amount": 1,
+				"price": 16712
+			},
+			{
+				"name": "Auto Ancient Altar",
+				"amount": 1,
+				"price": 28778
+			},
+			{
+				"name": "Auto Enhanced Crafting Table",
+				"amount": 1,
+				"price": 17792
+			},
+			{
+				"name": "Auto Table Saw",
+				"amount": 1,
+				"price": 35658
+			},
+			{
+				"name": "Auto Magic Workbench",
+				"amount": 1,
+				"price": 18446
+			},
+			{
+				"name": "Auto Armor Forge",
+				"amount": 1,
+				"price": 88872
+			},
+			{
+				"name": "Advanced Auto Disenchanter",
+				"amount": 1,
+				"price": 158362
+			},
+			{
+				"name": "Backpack Loader",
+				"amount": 1,
+				"price": 43036
+			},
+			{
+				"name": "Backpack Unloader",
+				"amount": 1,
+				"price": 43036
+			},
+			{
+				"name": "Electric Dust Fabricator",
+				"amount": 1,
+				"price": 207340
+			},
+			{
+				"name": "Electric Dust Recycler",
+				"amount": 1,
+				"price": 107264
+			},
+			{
+				"name": "Advanced Charging Table",
+				"amount": 1,
+				"price": 38522
+			},
+			{
+				"name": "ACB Upgrade Card",
+				"amount": 1,
+				"price": 30024
+			},
+			{
+				"name": "Smart Factory",
+				"amount": 1,
+				"price": 349049
+			},
+			{
+				"name": "Watering Can",
+				"amount": 1,
+				"price": 2450
+			},
+			{
+				"name": "Scythe",
+				"amount": 1,
+				"price": 1001
+			},
+			{
+				"name": "Paxel",
+				"amount": 1,
+				"price": 18716
+			},
+			{
+				"name": "Mini Fluffy Barrel",
+				"amount": 1,
+				"price": 26502
+			},
+			{
+				"name": "Small Fluffy Barrel",
+				"amount": 1,
+				"price": 12124
+			},
+			{
+				"name": "Medium Fluffy Barrel",
+				"amount": 1,
+				"price": 36260
+			},
+			{
+				"name": "Big Fluffy Barrel",
+				"amount": 1,
+				"price": 84640
+			},
+			{
+				"name": "Large Fluffy Barrel",
+				"amount": 1,
+				"price": 205580
+			},
+			{
+				"name": "Massive Fluffy Barrel",
+				"amount": 1,
+				"price": 423760
+			},
+			{
+				"name": "Bottomless Fluffy Barrel",
+				"amount": 1,
+				"price": 921020
+			},
+			{
+				"name": "Small Portable Charger",
+				"amount": 1,
+				"price": 21959
+			},
+			{
+				"name": "Medium Portable Charger",
+				"amount": 1,
+				"price": 31465
+			},
+			{
+				"name": "Big Portable Charger",
+				"amount": 1,
+				"price": 43733
+			},
+			{
+				"name": "Large Portable Charger",
+				"amount": 1,
+				"price": 57921
+			},
+			{
+				"name": "Carbonado Portable Charger",
+				"amount": 1,
+				"price": 127694
+			},
+			{
+				"name": "Fluffy Wrench",
+				"amount": 1,
+				"price": 78
+			},
+			{
+				"name": "Reinforced Fluffy Wrench",
+				"amount": 1,
+				"price": 12493
+			},
+			{
+				"name": "Carbonado Fluffy Wrench",
+				"amount": 1,
+				"price": 168306
+			},
+			{
+				"name": "Ender Chest Insertion Node",
+				"amount": 1,
+				"price": 416
+			},
+			{
+				"name": "Ender Chest Extraction Node",
+				"amount": 1,
+				"price": 416
+			},
+			{
+				"name": "Cargo Manipulator",
+				"amount": 1,
+				"price": 22861
+			},
+			{
+				"name": "Ancient Rune [Fireproof]",
+				"amount": 1,
+				"price": 5707
+			},
+			{
+				"name": "Dolly",
+				"amount": 1,
+				"price": 2269
+			},
+			{
+				"name": "Ancient Book",
+				"amount": 1,
+				"price": 1001
+			},
+			{
+				"name": "Warp Pad",
+				"amount": 1,
+				"price": 861
+			},
+			{
+				"name": "Warp Pad Configurator",
+				"amount": 1,
+				"price": 39
+			},
+			{
+				"name": "Alternate Elevator Pad",
+				"amount": 2,
+				"price": 6197
+			}
+		]
+	},
+	"mobCapturer": {
+		"name": "Mob Capturer",
+		"items": [
+			{
+				"name": "Mob Capturing Pellet",
+				"amount": 2,
+				"price": 200
+			},
+			{
+				"name": "Mob Capturing Cannon",
+				"amount": 1,
+				"price": 15475
+			}
+		]
+	},
+	"litexpansion": {
+		"name": "LiteXpansion",
+		"items": [
+			{
+				"name": "Cargo Configurator",
+				"amount": 1,
+				"price": 95765
+			},
+			{
+				"name": "Glass Cutter",
+				"amount": 1,
+				"price": 450
+			},
+			{
+				"name": "Mining Drill",
+				"amount": 1,
+				"price": 10016
+			},
+			{
+				"name": "Diamond Drill",
+				"amount": 1,
+				"price": 13016
+			},
+			{
+				"name": "Food Synthesizer",
+				"amount": 1,
+				"price": 6706
+			},
+			{
+				"name": "Recycler",
+				"amount": 1,
+				"price": 56320
+			},
+			{
+				"name": "Mass Fabricator",
+				"amount": 1,
+				"price": 56320
+			},
+			{
+				"name": "MFE",
+				"amount": 1,
+				"price": 30780
+			},
+			{
+				"name": "MFSU",
+				"amount": 1,
+				"price": 98575
+			},
+			{
+				"name": "Generator",
+				"amount": 1,
+				"price": 3894
+			},
+			{
+				"name": "Macerator",
+				"amount": 1,
+				"price": 5103
+			},
+			{
+				"name": "UU Crafter",
+				"amount": 1,
+				"price": 152279
+			},
+			{
+				"name": "Converter",
+				"amount": 1,
+				"price": 7845
+			},
+			{
+				"name": "Advanced Alloy",
+				"amount": 1,
+				"price": 1500
+			},
+			{
+				"name": "Mixed Metal Ingot",
+				"amount": 1,
+				"price": 1500
+			},
+			{
+				"name": "Reinforced Glass",
+				"amount": 1,
+				"price": 3007
+			},
+			{
+				"name": "Machine Block",
+				"amount": 1,
+				"price": 3600
+			},
+			{
+				"name": "Advanced Machine Block",
+				"amount": 1,
+				"price": 6060
+			},
+			{
+				"name": "Tin Plate",
+				"amount": 1,
+				"price": 13
+			},
+			{
+				"name": "Tin Item Casing",
+				"amount": 1,
+				"price": 13
+			},
+			{
+				"name": "Uninsulated Tin Cable",
+				"amount": 3,
+				"price": 13
+			},
+			{
+				"name": "Tin Cable",
+				"amount": 1,
+				"price": 154
+			},
+			{
+				"name": "Copper Plate",
+				"amount": 1,
+				"price": 13
+			},
+			{
+				"name": "Copper Item Casing",
+				"amount": 1,
+				"price": 13
+			},
+			{
+				"name": "Uninsulated Copper Cable",
+				"amount": 3,
+				"price": 13
+			},
+			{
+				"name": "Copper Cable",
+				"amount": 1,
+				"price": 154
+			},
+			{
+				"name": "RE Battery",
+				"amount": 1,
+				"price": 286
+			},
+			{
+				"name": "Gold Plate",
+				"amount": 1,
+				"price": 150
+			},
+			{
+				"name": "Gold Item Casing",
+				"amount": 1,
+				"price": 150
+			},
+			{
+				"name": "Uninsulated Gold Cable",
+				"amount": 3,
+				"price": 150
+			},
+			{
+				"name": "Gold Cable",
+				"amount": 1,
+				"price": 200
+			},
+			{
+				"name": "Iron Plate",
+				"amount": 1,
+				"price": 450
+			},
+			{
+				"name": "Iron Item Casing",
+				"amount": 1,
+				"price": 450
+			},
+			{
+				"name": "Diamond Plate",
+				"amount": 1,
+				"price": 1000
+			},
+			{
+				"name": "Thorium Plate",
+				"amount": 1,
+				"price": 750
+			},
+			{
+				"name": "Electronic Circuit",
+				"amount": 1,
+				"price": 1456
+			},
+			{
+				"name": "Advanced Circuit",
+				"amount": 1,
+				"price": 1663
+			},
+			{
+				"name": "Lapotron Crystal",
+				"amount": 1,
+				"price": 10012
+			},
+			{
+				"name": "Power Unit",
+				"amount": 1,
+				"price": 7766
+			},
+			{
+				"name": "Refined Iron",
+				"amount": 1,
+				"price": 450
+			},
+			{
+				"name": "Mag-Thor",
+				"amount": 1,
+				"price": 2276
+			},
+			{
+				"name": "Thorium",
+				"amount": 1,
+				"price": 750
+			},
+			{
+				"name": "Scrap",
+				"amount": 1,
+				"price": 1
+			},
+			{
+				"name": "UU-Matter",
+				"amount": 1,
+				"price": 10000
+			},
+			{
+				"name": "Iridium",
+				"amount": 1,
+				"price": 70000
+			},
+			{
+				"name": "Iridium Plate",
+				"amount": 1,
+				"price": 287000
+			},
+			{
+				"name": "Nano Blade",
+				"amount": 1,
+				"price": 10252
+			},
+			{
+				"name": "Electric Chestplate",
+				"amount": 1,
+				"price": 46160
+			},
+			{
+				"name": "Coal Dust",
+				"amount": 1,
+				"price": 40
+			},
+			{
+				"name": "Raw Carbon Fibre",
+				"amount": 1,
+				"price": 160
+			},
+			{
+				"name": "Raw Carbon Mesh",
+				"amount": 1,
+				"price": 320
+			},
+			{
+				"name": "Carbon Plate",
+				"amount": 1,
+				"price": 320
+			},
+			{
+				"name": "Advanced Solar Panel",
+				"amount": 1,
+				"price": 1338064
+			},
+			{
+				"name": "Hybrid Solar Panel",
+				"amount": 1,
+				"price": 870195
+			},
+			{
+				"name": "Ultimate Solar Panel",
+				"amount": 1,
+				"price": 6962740
+			},
+			{
+				"name": "Advanced Solar Helmet",
+				"amount": 1,
+				"price": 65418
+			},
+			{
+				"name": "Carbonado Solar Helmet",
+				"amount": 1,
+				"price": 143906
+			},
+			{
+				"name": "Energized Solar Helmet",
+				"amount": 1,
+				"price": 471134
+			},
+			{
+				"name": "Hybrid Solar Helmet",
+				"amount": 1,
+				"price": 1812199
+			},
+			{
+				"name": "Super Advanced Solar Helmet",
+				"amount": 1,
+				"price": 3133823
+			},
+			{
+				"name": "Ultimate Solar Helmet",
+				"amount": 1,
+				"price": 11244563
+			}
+		]
+	},
+	"uzitecnePredmety": {
+		"name": "Užitečné předměty",
+		"items": [
+			{
+				"name": "Portable Crafter",
+				"amount": 1,
+				"price": 54
+			},
+			{
+				"name": "Portable Dustbin",
+				"amount": 1,
+				"price": 3600
+			},
+			{
+				"name": "Rag",
+				"amount": 2,
+				"price": 20
+			},
+			{
+				"name": "Bandage",
+				"amount": 4,
+				"price": 24
+			},
+			{
+				"name": "Splint",
+				"amount": 4,
+				"price": 903
+			},
+			{
+				"name": "Vitamins",
+				"amount": 1,
+				"price": 53
+			},
+			{
+				"name": "Medicine",
+				"amount": 1,
+				"price": 66
+			},
+			{
+				"name": "Small Backpack",
+				"amount": 1,
+				"price": 623
+			},
+			{
+				"name": "Backpack",
+				"amount": 1,
+				"price": 1838
+			},
+			{
+				"name": "Large Backpack",
+				"amount": 1,
+				"price": 3653
+			},
+			{
+				"name": "Woven Backpack",
+				"amount": 1,
+				"price": 5763
+			},
+			{
+				"name": "Gilded Backpack",
+				"amount": 1,
+				"price": 11769
+			},
+			{
+				"name": "Radiant Backpack",
+				"amount": 1,
+				"price": 18375
+			},
+			{
+				"name": "Cooler",
+				"amount": 1,
+				"price": 6086
+			},
+			{
+				"name": "Tape Measure",
+				"amount": 1,
+				"price": 2426
+			}
+		]
+	},
+	"nastroje": {
+		"name": "Nástroje",
+		"items": [
+			{
+				"name": "Gold Pan",
+				"amount": 1,
+				"price": 20
+			},
+			{
+				"name": "Nether Gold Pan",
+				"amount": 1,
+				"price": 85
+			},
+			{
+				"name": "Grappling Hook",
+				"amount": 1,
+				"price": 4125
+			},
+			{
+				"name": "Smelter's Pickaxe",
+				"amount": 1,
+				"price": 2443
+			},
+			{
+				"name": "Lumber Axe",
+				"amount": 1,
+				"price": 17098
+			},
+			{
+				"name": "Pickaxe of Containment",
+				"amount": 1,
+				"price": 7200
+			},
+			{
+				"name": "Explosive Pickaxe",
+				"amount": 1,
+				"price": 8535
+			},
+			{
+				"name": "Explosive Shovel",
+				"amount": 1,
+				"price": 7475
+			},
+			{
+				"name": "Pickaxe of the Seeker",
+				"amount": 1,
+				"price": 8565
+			},
+			{
+				"name": "Cobalt Pickaxe",
+				"amount": 1,
+				"price": 27743
+			},
+			{
+				"name": "Pickaxe of Vein Mining",
+				"amount": 1,
+				"price": 11115
+			},
+			{
+				"name": "Climbing Pick",
+				"amount": 1,
+				"price": 5295
+			},
+			{
+				"name": "Soulbound Pickaxe",
+				"amount": 1,
+				"price": 4511
+			},
+			{
+				"name": "Soulbound Axe",
+				"amount": 1,
+				"price": 4511
+			},
+			{
+				"name": "Soulbound Shovel",
+				"amount": 1,
+				"price": 4261
+			},
+			{
+				"name": "Soulbound Hoe",
+				"amount": 1,
+				"price": 4511
+			}
+		]
+	},
+	"enderitoveTalismanyTierIi": {
+		"name": "Enderitové talismany (Tier II)",
+		"items": [
+			{
+				"name": "Talisman of the Anvil",
+				"amount": 4,
+				"price": 7363
+			},
+			{
+				"name": "Talisman of the Miner",
+				"amount": 1,
+				"price": 1309
+			},
+			{
+				"name": "Talisman of the Farmer",
+				"amount": 1,
+				"price": 3274
+			},
+			{
+				"name": "Talisman of the Hunter",
+				"amount": 1,
+				"price": 1327
+			},
+			{
+				"name": "Talisman of the Lava Walker",
+				"amount": 4,
+				"price": 570
+			},
+			{
+				"name": "Talisman of the Water Breather",
+				"amount": 4,
+				"price": 571
+			},
+			{
+				"name": "Talisman of the Angel",
+				"amount": 1,
+				"price": 1790
+			},
+			{
+				"name": "Talisman of the Firefighter",
+				"amount": 4,
+				"price": 957
+			},
+			{
+				"name": "Talisman of the Magician",
+				"amount": 1,
+				"price": 7886
+			},
+			{
+				"name": "Talisman of the Traveller",
+				"amount": 1,
+				"price": 8688
+			},
+			{
+				"name": "Talisman of the Warrior",
+				"amount": 4,
+				"price": 469826
+			},
+			{
+				"name": "Talisman of the Knight",
+				"amount": 4,
+				"price": 468239
+			},
+			{
+				"name": "Talisman of the Caveman",
+				"amount": 1,
+				"price": 1878
+			},
+			{
+				"name": "Talisman of the Wise",
+				"amount": 1,
+				"price": 7014
+			},
+			{
+				"name": "Talisman of the Whirlwind",
+				"amount": 1,
+				"price": 14460
+			},
+			{
+				"name": "Talisman of the Wizard",
+				"amount": 1,
+				"price": 8418
+			}
+		]
+	},
+	"zakladniStroje": {
+		"name": "Základní stroje",
+		"items": [
+			{
+				"name": "Output Chest",
+				"amount": 1,
+				"price": 123
+			},
+			{
+				"name": "Automatic Ignition Chamber",
+				"amount": 1,
+				"price": 2000
+			},
+			{
+				"name": "Composter",
+				"amount": 1,
+				"price": 303
+			},
+			{
+				"name": "Crucible",
+				"amount": 1,
+				"price": 410
+			},
+			{
+				"name": "Enhanced Furnace - I",
+				"amount": 1,
+				"price": 13045
+			},
+			{
+				"name": "Enhanced Furnace - II",
+				"amount": 1,
+				"price": 26082
+			},
+			{
+				"name": "Enhanced Furnace - III",
+				"amount": 1,
+				"price": 39997
+			},
+			{
+				"name": "Enhanced Furnace - IV",
+				"amount": 1,
+				"price": 53912
+			},
+			{
+				"name": "Enhanced Furnace - V",
+				"amount": 1,
+				"price": 67827
+			},
+			{
+				"name": "Enhanced Furnace - VI",
+				"amount": 1,
+				"price": 81742
+			},
+			{
+				"name": "Enhanced Furnace - VII",
+				"amount": 1,
+				"price": 95657
+			},
+			{
+				"name": "Enhanced Furnace - VIII",
+				"amount": 1,
+				"price": 109572
+			},
+			{
+				"name": "Enhanced Furnace - IX",
+				"amount": 1,
+				"price": 123487
+			},
+			{
+				"name": "Enhanced Furnace - X",
+				"amount": 1,
+				"price": 137402
+			},
+			{
+				"name": "Enhanced Furnace - XI",
+				"amount": 1,
+				"price": 151317
+			},
+			{
+				"name": "Reinforced Furnace",
+				"amount": 1,
+				"price": 198100
+			},
+			{
+				"name": "Carbonado Edged Furnace",
+				"amount": 1,
+				"price": 267299
+			}
+		]
+	},
+	"technickePomucky": {
+		"name": "Technické pomůcky",
+		"items": [
+			{
+				"name": "Electric Jetpack - I",
+				"amount": 1,
+				"price": 51265
+			},
+			{
+				"name": "Electric Jetpack - II",
+				"amount": 1,
+				"price": 51265
+			},
+			{
+				"name": "Electric Jetpack - III",
+				"amount": 1,
+				"price": 51265
+			},
+			{
+				"name": "Electric Jetpack - IV",
+				"amount": 1,
+				"price": 55517
+			},
+			{
+				"name": "Electric Jetpack - V",
+				"amount": 1,
+				"price": 59917
+			},
+			{
+				"name": "Electric Jetpack - VI",
+				"amount": 1,
+				"price": 65733
+			},
+			{
+				"name": "Electric Jetpack - VII",
+				"amount": 1,
+				"price": 125561
+			},
+			{
+				"name": "Armored Jetpack",
+				"amount": 1,
+				"price": 94933
+			},
+			{
+				"name": "Parachute",
+				"amount": 1,
+				"price": 831
+			},
+			{
+				"name": "Hologram Projector",
+				"amount": 3,
+				"price": 12680
+			},
+			{
+				"name": "Multi Tool - I",
+				"amount": 1,
+				"price": 8929
+			},
+			{
+				"name": "Multi Tool - II",
+				"amount": 1,
+				"price": 8929
+			},
+			{
+				"name": "Multi Tool - III",
+				"amount": 1,
+				"price": 8929
+			},
+			{
+				"name": "Multi Tool - IV",
+				"amount": 1,
+				"price": 14244
+			},
+			{
+				"name": "Multi Tool - V",
+				"amount": 1,
+				"price": 19744
+			},
+			{
+				"name": "Multi Tool - VI",
+				"amount": 1,
+				"price": 24860
+			},
+			{
+				"name": "Multi Tool - VII",
+				"amount": 1,
+				"price": 108851
+			},
+			{
+				"name": "Solar Helmet",
+				"amount": 1,
+				"price": 44023
+			},
+			{
+				"name": "Night Vision Goggles",
+				"amount": 1,
+				"price": 1370
+			},
+			{
+				"name": "Jet Boots - I",
+				"amount": 1,
+				"price": 51191
+			},
+			{
+				"name": "Jet Boots - II",
+				"amount": 1,
+				"price": 51191
+			},
+			{
+				"name": "Jet Boots - III",
+				"amount": 1,
+				"price": 51191
+			},
+			{
+				"name": "Jet Boots - IV",
+				"amount": 1,
+				"price": 53317
+			},
+			{
+				"name": "Jet Boots - V",
+				"amount": 1,
+				"price": 55517
+			},
+			{
+				"name": "Jet Boots - VI",
+				"amount": 1,
+				"price": 62733
+			},
+			{
+				"name": "Jet Boots - VII",
+				"amount": 1,
+				"price": 112731
+			},
+			{
+				"name": "Armored Jet Boots",
+				"amount": 1,
+				"price": 77333
+			},
+			{
+				"name": "Multimeter",
+				"amount": 1,
+				"price": 4557
+			}
+		]
+	},
+	"luckyBlocks": {
+		"name": "Lucky Blocks",
+		"items": [
+			{
+				"name": "Lucky Block",
+				"amount": 1,
+				"price": 6050
+			},
+			{
+				"name": "Very Lucky Block",
+				"amount": 1,
+				"price": 9050
+			},
+			{
+				"name": "Very Unlucky Block",
+				"amount": 1,
+				"price": 6062
+			},
+			{
+				"name": "Pandora''s Block",
+				"amount": 1,
+				"price": 6594
+			}
+		]
+	},
+	"globalWarming": {
+		"name": "Global Warming",
+		"items": [
+			{
+				"name": "Air Compressor",
+				"amount": 1,
+				"price": 6212
+			},
+			{
+				"name": "Empty Canister",
+				"amount": 1,
+				"price": 188
+			},
+			{
+				"name": "Cinnabarite",
+				"amount": 1,
+				"price": 150
+			},
+			{
+				"name": "Mercury",
+				"amount": 1,
+				"price": 250
+			},
+			{
+				"name": "Filter",
+				"amount": 1,
+				"price": 26
+			}
+		]
+	},
+	"magickePredmety": {
+		"name": "Magické předměty",
+		"items": [
+			{
+				"name": "Magical Lump - I",
+				"amount": 1,
+				"price": 3
+			},
+			{
+				"name": "Magical Lump - II",
+				"amount": 1,
+				"price": 6
+			},
+			{
+				"name": "Magical Lump - III",
+				"amount": 1,
+				"price": 24
+			},
+			{
+				"name": "Ender Lump - I",
+				"amount": 1,
+				"price": 13
+			},
+			{
+				"name": "Ender Lump - II",
+				"amount": 1,
+				"price": 26
+			},
+			{
+				"name": "Ender Lump - III",
+				"amount": 1,
+				"price": 104
+			},
+			{
+				"name": "Magical Book Cover",
+				"amount": 1,
+				"price": 54
+			},
+			{
+				"name": "Magical Glass",
+				"amount": 1,
+				"price": 42
+			},
+			{
+				"name": "Lava Crystal",
+				"amount": 1,
+				"price": 147
+			},
+			{
+				"name": "Common Talisman",
+				"amount": 1,
+				"price": 1074
+			},
+			{
+				"name": "Necrotic Skull",
+				"amount": 1,
+				"price": 374
+			},
+			{
+				"name": "Essence of Afterlife",
+				"amount": 1,
+				"price": 1755
+			},
+			{
+				"name": "Synthetic Shulker Shell",
+				"amount": 1,
+				"price": 116480
+			},
+			{
+				"name": "Broken Spawner",
+				"amount": 1,
+				"price": 15000
+			},
+			{
+				"name": "Blank Rune",
+				"amount": 1,
+				"price": 110
+			},
+			{
+				"name": "Ancient Rune [Air]",
+				"amount": 1,
+				"price": 179
+			},
+			{
+				"name": "Ancient Rune [Earth]",
+				"amount": 1,
+				"price": 319
+			},
+			{
+				"name": "Ancient Rune [Fire]",
+				"amount": 1,
+				"price": 542
+			},
+			{
+				"name": "Ancient Rune [Water]",
+				"amount": 1,
+				"price": 349
+			},
+			{
+				"name": "Ancient Rune [Ender]",
+				"amount": 1,
+				"price": 396
+			},
+			{
+				"name": "Ancient Rune [Lightning]",
+				"amount": 1,
+				"price": 2130
+			},
+			{
+				"name": "Ancient Rune [Rainbow]",
+				"amount": 1,
+				"price": 248
+			},
+			{
+				"name": "Ancient Rune [Soulbound]",
+				"amount": 1,
+				"price": 3881
+			},
+			{
+				"name": "Ancient Rune [Enchantment]",
+				"amount": 1,
+				"price": 796
+			},
+			{
+				"name": "Ancient Rune [Villagers]",
+				"amount": 1,
+				"price": 667
+			},
+			{
+				"name": "Strange Nether Goo",
+				"amount": 1,
+				"price": 100
+			}
+		]
+	},
+	"soulJars": {
+		"name": "Soul Jars",
+		"items": [
+			{
+				"name": "Soul Jar",
+				"amount": 3,
+				"price": 737
+			}
+		]
+	},
+	"gpsStroje": {
+		"name": "GPS Stroje",
+		"items": [
+			{
+				"name": "GPS Transmitter",
+				"amount": 1,
+				"price": 17348
+			},
+			{
+				"name": "Advanced GPS Transmitter",
+				"amount": 1,
+				"price": 69740
+			},
+			{
+				"name": "Carbonado GPS Transmitter",
+				"amount": 1,
+				"price": 292631
+			},
+			{
+				"name": "Energized GPS Transmitter",
+				"amount": 1,
+				"price": 1188179
+			},
+			{
+				"name": "GPS Control Panel",
+				"amount": 1,
+				"price": 9223
+			},
+			{
+				"name": "GPS Marker Tool",
+				"amount": 1,
+				"price": 10340
+			},
+			{
+				"name": "GPS Emergency Transmitter",
+				"amount": 1,
+				"price": 24972
+			},
+			{
+				"name": "GPS Geo-Scanner",
+				"amount": 1,
+				"price": 25706
+			},
+			{
+				"name": "Portable Geo-Scanner",
+				"amount": 1,
+				"price": 40503
+			},
+			{
+				"name": "Oil Pump",
+				"amount": 1,
+				"price": 27759
+			},
+			{
+				"name": "GEO Miner",
+				"amount": 1,
+				"price": 56018
+			},
+			{
+				"name": "GPS Teleporter Pylon",
+				"amount": 8,
+				"price": 5996
+			},
+			{
+				"name": "GPS Teleporter Matrix",
+				"amount": 1,
+				"price": 25460
+			},
+			{
+				"name": "Portable Teleporter",
+				"amount": 1,
+				"price": 374189
+			},
+			{
+				"name": "Elevator Plate",
+				"amount": 2,
+				"price": 6187
+			},
+			{
+				"name": "GPS Activation Device (Shared)",
+				"amount": 1,
+				"price": 17541
+			},
+			{
+				"name": "GPS Activation Device (Personal)",
+				"amount": 1,
+				"price": 21513
+			}
+		]
+	}
 }

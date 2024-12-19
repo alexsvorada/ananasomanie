@@ -94,7 +94,7 @@
 							<div class="text-right">Celkem</div>
 						</div>
 
-						<div v-if="getCategoryItems(selectedCategory).length > 0" class="space-y-2">
+						<div v-if="hasItems(selectedCategory)" class="space-y-2">
 							<div
 								v-for="item in getCategoryItems(selectedCategory)"
 								:key="item.name"

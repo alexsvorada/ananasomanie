@@ -7,6 +7,13 @@ interface Item {
 	price: number
 }
 
+interface Category {
+	name: string
+	items: Item[]
+}
+
+type PriceList = Record<string, Category>
+
 const removeDiacritics = (str: string) => {
 	return str
 		.normalize('NFD')
@@ -14,59 +21,20 @@ const removeDiacritics = (str: string) => {
 		.toLowerCase()
 }
 
-const categoryNames: Record<string, string> = {
-	enchanty: 'Enchanty',
-	zbrane: 'Zbraně',
-	uzitecnePredmety: 'Užitečné předměty',
-	zakladniStroje: 'Základní stroje',
-	nastroje: 'Nástroje',
-	materialy: 'Materiály',
-	extraGear: 'ExtraGear',
-	jidlo: 'Jídlo',
-	magickePredmety: 'Magické předměty',
-	magickaZbroj: 'Magická zbroj',
-	technickeKomponenty: 'Technické komponenty',
-	smisenePredmety: 'Smíšené předměty',
-	brneni: 'Brnění',
-	talismanyTier1: 'Talismany (Tier I)',
-	magickePomucky: 'Magické pomůcky',
-	dankTech2: 'DankTech2',
-	magicalPlants: 'Magical Plants',
-	technickePomucky: 'Technické pomůcky',
-	enderitoveTalismanyTier2: 'Enderitové talismany (Tier II)',
-	soulJars: 'Soul Jars',
-	extraTools: 'Extra Tools',
-	galactifun: 'Galactifun',
-	globalWarming: 'Global Warming',
-	mobCapturer: 'Mob Capturer',
-	transcEndence: 'TranscEndence',
-	luckyBlocks: 'Lucky Blocks',
-	foxyMachines: 'Foxy Machines',
-	slimyTreeTaps: 'Slimy TreeTaps',
-	fluffyMachines: 'Fluffy Machines',
-	soundMuffler: 'SoundMuffler',
-	liteXpansion: 'LiteXpansion',
-	infinityExpansion: 'Infinity Expansion',
-	dynaTech: 'DynaTech',
-	energieElektrika: 'Energie a elektrika',
-	gpsStroje: 'GPS Stroje',
-	programovatelneAndoidy: 'Programovatelné andoidy',
-	cargoSystem: 'Cargo System',
-	ecoPowerGenerators: 'Eco-Power Generators',
-}
-
 export const usePriceList = () => {
-	const priceList = ref<Record<string, Item[]>>(priceListData)
+	const priceList = ref<PriceList>(priceListData)
 	const selectedCategory = ref<string | null>(null)
 	const modifiedAmounts = ref<Record<string, number>>({})
 	const searchQuery = ref('')
 
-	const getCategoryDisplayName = (key: string) => categoryNames[key] || key
+	const getCategoryDisplayName = (key: string) => {
+		return priceList.value[key]?.name || key
+	}
 
 	const categories = computed(() => Object.keys(priceList.value))
 
 	const getFilteredItems = (category: string) => {
-		const items = priceList.value[category] || []
+		const items = priceList.value[category]?.items || []
 		if (!searchQuery.value) return items
 
 		const normalizedSearch = removeDiacritics(searchQuery.value)
@@ -94,11 +62,11 @@ export const usePriceList = () => {
 		return modifiedAmounts.value[itemName] !== undefined
 	}
 
-	const calculateTotalPrice = (item: { price: number; amount: number }, modifiedAmount: number) => {
+	const calculateTotalPrice = (item: Item, modifiedAmount: number) => {
 		return item.price * modifiedAmount
 	}
 
-	const updateAmount = (itemName: string, item: { amount: number }, value: string) => {
+	const updateAmount = (itemName: string, item: Item, value: string) => {
 		const newAmount = parseInt(value) || 1
 
 		if (newAmount === item.amount) {
