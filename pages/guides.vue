@@ -1,4 +1,10 @@
 <script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'Návody',
+		description: 'Herní návody a průvodce',
+	})
+
 	interface Guide {
 		name: string
 		icon: string
@@ -7,9 +13,6 @@
 			content: string | string[]
 		}[]
 	}
-
-	const { colors, text, isBold, isItalic, isUnderline, generatedCode, getPreviewColor, addColor, removeColor } = useRGBGenerator()
-	const { copied: generatedCodeWasCopied, copyToClipboard: copyCodeToClipboard } = useCopy()
 
 	const guides: Guide[] = [
 		{
@@ -89,23 +92,13 @@
 		},
 	]
 
-	const selectedGuide = ref(guides[0].name)
-	const currentGuide = computed(() => guides.find((g) => g.name === selectedGuide.value))
-	const openSections = ref<string[]>([])
+	const { colors, text, isBold, isItalic, isUnderline, generatedCode, getPreviewColor, addColor, removeColor } = useRGBGenerator()
+	const { copied: generatedCodeWasCopied, copyToClipboard: copyCodeToClipboard } = useCopy()
+	const { selectedTab, setActiveTab, isTabActive, toggleSection, isSectionOpen } = useTabs({
+		defaultTab: guides[0].name,
+	})
 
-	const toggleSection = (title: string) => {
-		const index = openSections.value.indexOf(title)
-		if (index === -1) {
-			openSections.value.push(title)
-		} else {
-			openSections.value.splice(index, 1)
-		}
-	}
-
-	const handleGuideClick = (guideName: string) => {
-		selectedGuide.value = guideName
-		openSections.value = []
-	}
+	const currentGuide = computed(() => guides.find((g) => g.name === selectedTab.value))
 </script>
 
 <template>
@@ -122,10 +115,10 @@
 				<button
 					v-for="guide in guides"
 					:key="guide.name"
-					@click="handleGuideClick(guide.name)"
+					@click="setActiveTab(guide.name)"
 					class="p-4 rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm transition-all duration-300"
 					:class="[
-						selectedGuide === guide.name
+						isTabActive(guide.name)
 							? 'bg-primary text-dark ring-2 ring-primary ring-offset-2 ring-offset-dark'
 							: 'hover:bg-white/10',
 					]">
@@ -137,7 +130,7 @@
 			</div>
 
 			<!-- RGB Generator -->
-			<div v-if="selectedGuide === 'RGB Generátor'" class="mb-12">
+			<div v-if="selectedTab === 'RGB Generátor'" class="mb-12">
 				<div class="rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm overflow-hidden">
 					<div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-[22rem]">
 						<!-- Left Column (Text Input & Preview) -->
@@ -288,7 +281,7 @@
 			<!-- Guide Content -->
 			<div v-if="currentGuide" class="space-y-4">
 				<div
-					v-for="(section, index) in currentGuide.sections"
+					v-for="section in currentGuide.sections"
 					:key="section.title"
 					class="rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm overflow-hidden">
 					<!-- Section Header -->
@@ -302,12 +295,12 @@
 						</h2>
 						<Icon
 							v-if="section.title !== 'Jak použít'"
-							:name="openSections.includes(section.title) ? 'lucide:chevron-up' : 'lucide:chevron-down'"
+							:name="isSectionOpen(section.title) ? 'lucide:chevron-up' : 'lucide:chevron-down'"
 							class="w-6 h-6 transition-transform" />
 					</button>
 
 					<!-- Section Content -->
-					<div v-show="section.title === 'Jak použít' || openSections.includes(section.title)" class="p-6 pt-0">
+					<div v-show="section.title === 'Jak použít' || isSectionOpen(section.title)" class="p-6 pt-0">
 						<ul v-if="Array.isArray(section.content)" class="space-y-2">
 							<li v-for="item in section.content" :key="item" class="flex items-center gap-2">
 								<Icon name="lucide:check" class="w-5 h-5 text-primary flex-shrink-0" />

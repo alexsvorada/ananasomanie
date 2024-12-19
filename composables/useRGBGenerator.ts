@@ -7,7 +7,6 @@ export const useRGBGenerator = () => {
 
 	const MAX_COLORS = 4
 
-	// Color utility functions
 	const hexToRGB = (hex: string) => {
 		const [r, g, b] = hex
 			.slice(1)
@@ -19,7 +18,6 @@ export const useRGBGenerator = () => {
 	const RGBToHex = (r: number, g: number, b: number) =>
 		'#' + [r, g, b].map((x) => Math.round(x).toString(16).padStart(2, '0')).join('')
 
-	// Color management
 	const addColor = () => {
 		if (colors.value.length < MAX_COLORS) {
 			colors.value.push('#ffffff')
@@ -32,7 +30,6 @@ export const useRGBGenerator = () => {
 		}
 	}
 
-	// Gradient calculation
 	const getColorAtPosition = (position: number) => {
 		if (colors.value.length === 1) return colors.value[0]
 
@@ -47,14 +44,12 @@ export const useRGBGenerator = () => {
 		return RGBToHex(r1 + (r2 - r1) * segmentPosition, g1 + (g2 - g1) * segmentPosition, b1 + (b2 - b1) * segmentPosition)
 	}
 
-	// Format helpers
 	const getFormatPrefix = () => {
 		return [isBold.value && '&l', isItalic.value && '&o', isUnderline.value && '&n'].filter(Boolean).join('')
 	}
 
 	const getColoredChar = (char: string, color: string) => `&#${color.substring(1)}${char}`
 
-	// Main functionality
 	const generatedCode = computed(() => {
 		if (!text.value) return ''
 
