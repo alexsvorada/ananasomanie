@@ -6,6 +6,7 @@
 		{ name: 'VIP', path: '/vip' },
 		{ name: 'HLASOVÁNÍ', path: '/vote' },
 		{ name: 'MAPA', path: '/dynmap' },
+		{ name: 'CENÍK', path: '/pricelist' },
 		{ name: 'NÁVODY', path: '/guides' },
 		{ name: 'PRAVIDLA', path: '/rules' },
 		{ name: 'ADMIN-TEAM', path: '/team' },
