@@ -1,4 +1,10 @@
 <script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'Domů',
+		description: 'Uvítací stránka',
+	})
+
 	const features = [
 		{ image: '/survival.webp', title: 'Survival', alt: 'Survival Icon' },
 		{ image: '/economy.webp', title: 'Ekonomiku', alt: 'Economics Icon' },
@@ -18,7 +24,6 @@
 <template>
 	<div>
 		<BackgroundImage />
-		<!-- Hero Section -->
 		<header class="min-h-screen flex items-center justify-center">
 			<div class="z-10 text-center flex flex-col items-center">
 				<NuxtImg class="h-32" src="/logo.svg" alt="Logo" aria-label="Ananaso-Manie logo" />
@@ -51,8 +56,6 @@
 				</div>
 			</div>
 		</header>
-
-		<!-- Features Section -->
 		<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 			<h2 class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">

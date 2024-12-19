@@ -1,4 +1,10 @@
 <script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'Pravidla',
+		description: 'Herní a komunitní pravidla',
+	})
+
 	const rules = [
 		{
 			icon: '🚫',
@@ -69,7 +75,6 @@
 				<p class="text-xl md:text-2xl text-gray-300">Dodržuj pravidla a budeme kamarádi</p>
 				<p class="text-gray-400 mt-2">Admin-Team si vyhrazuje kdykoliv pravidla změnit</p>
 			</header>
-
 			<div class="grid gap-8">
 				<div
 					v-for="(rule, index) in rules"

@@ -1,4 +1,10 @@
 <script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'Admin-Team',
+		description: 'Seznam členú Admin Týmu',
+	})
+
 	interface TeamMember {
 		name: string
 		role: string
@@ -50,13 +56,10 @@
 <template>
 	<section class="min-h-screen px-4 py-32 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-7xl">
-			<!-- Header -->
 			<header class="mb-12 text-center">
 				<h1 class="mb-4 text-5xl font-bold text-primary md:text-6xl">Admin-Team</h1>
 				<p class="text-xl text-gray-300 md:text-2xl">Seznamte se s našim týmem</p>
 			</header>
-
-			<!-- Administrators Section -->
 			<div
 				class="mb-16"
 				v-motion
@@ -90,8 +93,6 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Eventers Section -->
 			<div
 				v-motion
 				:initial="{ opacity: 0, y: 20 }"

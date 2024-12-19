@@ -1,4 +1,10 @@
 <script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'VIP',
+		description: 'Detaily pro koupi VIP',
+	})
+
 	interface VIPTier {
 		name: string
 		image: string
@@ -123,13 +129,10 @@
 <template>
 	<section class="min-h-screen px-4 py-32 sm:px-6 lg:px-8">
 		<div class="max-w-7xl mx-auto">
-			<!-- Header -->
 			<header class="text-center mb-12">
 				<h1 class="mb-4 text-5xl font-bold text-primary md:text-6xl">VIP Výhody</h1>
 				<p class="text-xl text-gray-300 md:text-2xl">Podpoř nás a získej speciální výhody!</p>
 			</header>
-
-			<!-- VIP Selection Grid -->
 			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
 				<button
 					v-for="tier in vipTiers"
@@ -145,8 +148,6 @@
 					<h3 class="font-bold text-center text-sm sm:text-base">{{ tier.name }}</h3>
 				</button>
 			</div>
-
-			<!-- Price Banner -->
 			<div
 				class="mb-8 text-center p-4 bg-primary/10 rounded-lg border border-primary/20"
 				v-motion
@@ -161,12 +162,8 @@
 					<span class="text-gray-300 text-lg">za {{ currentTier?.price.duration }}</span>
 				</p>
 			</div>
-
-			<!-- VIP Content Grid -->
 			<div class="grid md:grid-cols-2 gap-8">
-				<!-- Left Column -->
 				<div class="space-y-8">
-					<!-- Benefits -->
 					<div
 						v-motion
 						:initial="{ opacity: 0, y: 20 }"
@@ -186,8 +183,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<!-- Commands -->
 					<div
 						v-if="currentTier?.commands.length"
 						v-motion
@@ -209,8 +204,6 @@
 						</ul>
 					</div>
 				</div>
-
-				<!-- Right Column - Payment Info -->
 				<div
 					v-motion
 					:initial="{ opacity: 0, y: 20 }"
@@ -224,9 +217,7 @@
 						<Icon name="lucide:circle-dollar-sign" class="text-primary w-6 h-6" />
 						Platební možnosti
 					</h2>
-
 					<div class="space-y-6">
-						<!-- PaySafeCard Button -->
 						<NuxtLink
 							href="https://www.fakaheda.eu/prezentace-serveru/288830/vip"
 							target="_blank"
@@ -248,8 +239,6 @@
 									class="w-5 h-5 text-primary transform transition-transform duration-300 group-hover:translate-x-1" />
 							</div>
 						</NuxtLink>
-
-						<!-- Paypal/Bank Transfer Button -->
 						<NuxtLink
 							:href="useRuntimeConfig().public.discordLink"
 							target="_blank"
@@ -271,8 +260,6 @@
 									class="w-5 h-5 text-primary transform transition-transform duration-300 group-hover:translate-x-1" />
 							</div>
 						</NuxtLink>
-
-						<!-- Warning Box -->
 						<div class="p-4 bg-red-500/10 border border-red-500/20 rounded-lg">
 							<p class="text-red-400 text-sm text-center flex items-center justify-center gap-2">
 								<Icon name="lucide:alert-triangle" class="w-4 h-4" />

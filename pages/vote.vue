@@ -1,4 +1,10 @@
 <script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'Hlasování',
+		description: 'Hlasování na MC Server listech',
+	})
+
 	interface Voter {
 		nickname: string
 		votes: number
@@ -73,13 +79,10 @@
 			<header class="text-center mb-12">
 				<h1 class="text-5xl md:text-6xl font-bold text-primary mb-4">Hlasování</h1>
 			</header>
-
 			<div v-if="isLoading" class="text-center py-8">
 				<div class="animate-spin rounded-full h-8 w-8 border-t-2 border-b-2 border-primary mx-auto"></div>
 			</div>
-
 			<template v-else>
-				<!-- Nickname Input -->
 				<div class="max-w-md mx-auto mb-12">
 					<label for="nickname" class="block text-xl font-medium mb-2">Herní jméno</label>
 					<input
@@ -89,8 +92,6 @@
 						class="w-full px-4 py-2 bg-dark/50 border border-white/10 rounded-lg focus:ring-2 focus:ring-primary focus:border-primary transition-colors backdrop-blur-sm"
 						placeholder="Zadejte své herní jméno" />
 				</div>
-
-				<!-- Voting Cards -->
 				<div class="grid md:grid-cols-2 gap-8">
 					<div
 						v-for="site in votingSites"
@@ -105,7 +106,6 @@
 								Hlasovat
 							</button>
 						</div>
-
 						<div class="grid grid-cols-2 gap-4 mb-6">
 							<div class="text-center p-4 bg-white/5 rounded-lg">
 								<div class="text-gray-300 mb-1">Hodnocení</div>
@@ -116,11 +116,8 @@
 								<div class="text-2xl font-bold text-primary">{{ site.votes }}</div>
 							</div>
 						</div>
-
 						<div class="border-t border-white/10 pt-6">
 							<h3 class="text-xl font-bold mb-4">Top 5 hlasujících</h3>
-
-							<!-- Voters List -->
 							<div class="space-y-3">
 								<div
 									v-for="(voter, index) in site.topVoters.value"

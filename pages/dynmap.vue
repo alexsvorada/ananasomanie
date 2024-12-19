@@ -1,3 +1,11 @@
+<script setup lang="ts">
+	definePageMeta({
+		layout: 'default',
+		title: 'Dynmapa',
+		description: 'Dynmapa Serveru',
+	})
+</script>
+
 <template>
 	<section class="min-h-screen px-4 py-32 sm:px-6 lg:px-8">
 		<div class="mx-auto max-w-7xl">
@@ -5,10 +13,7 @@
 				<h1 class="mb-4 text-5xl font-bold text-primary md:text-6xl">Mapa serveru</h1>
 				<p class="text-xl text-gray-300 md:text-2xl">Prohlédni si náš svět v reálném čase</p>
 			</header>
-
-			<!-- Main Container -->
 			<div class="flex flex-col items-center xl:relative">
-				<!-- Map -->
 				<div
 					v-motion
 					:initial="{ opacity: 0 }"
@@ -25,10 +30,7 @@
 						loading="lazy"
 						title="Server Dynmap"></iframe>
 				</div>
-
-				<!-- Tips Container - Below on mobile, Absolute on XL -->
 				<div class="mt-8 space-y-8 md:w-[600px] lg:w-[800px] xl:absolute xl:right-full xl:top-0 xl:mt-0 xl:mr-8 xl:w-80">
-					<!-- Controls Section -->
 					<div
 						v-motion
 						:initial="{ opacity: 0, x: -20 }"
@@ -56,8 +58,6 @@
 							</li>
 						</ul>
 					</div>
-
-					<!-- Tips Section -->
 					<div
 						v-motion
 						:initial="{ opacity: 0, x: -20 }"
