@@ -11,6 +11,7 @@
 		sections: {
 			title: string
 			content: string | string[]
+			images?: { src: string; alt: string }[]
 		}[]
 	}
 
@@ -34,24 +35,40 @@
 			icon: 'lucide:package',
 			sections: [
 				{
-					title: 'Jak zapnout resource pack',
-					content: [
-						'Při připojení na server potvrďte stažení',
-						'V nastavení serveru zapněte resource pack',
-						'Počkejte na stažení a načtení',
+					title: 'Návod se screenshoty',
+					content: ['Následující obrázky vám pomohou s nastavením resource packu', 'Screenshoty vytvořila Snowie_Edits'],
+					images: [
+						{ src: '/rp01.webp', alt: 'Potvrzení stažení resource packu' },
+						{ src: '/rp02.webp', alt: 'Nastavení resource packu v menu' },
+						{ src: '/rp03.webp', alt: 'Finální nastavení' },
 					],
 				},
 				{
 					title: 'Řešení problémů s prefixy',
-					content: ['Otevřete Nastavení (ESC)', 'Přejděte do Language', 'Vypněte Force Unicode Font (OFF)'],
+					content: [
+						'Otevřete Nastavení (ESC)',
+						'Přejděte do Options...',
+						'Klikněte na Language',
+						'Najděte Force Unicode Font',
+						'Přepněte na OFF',
+					],
 				},
 				{
-					title: 'Problémy s resource packem?',
+					title: 'OptiFine požadavky',
+					content: [
+						'Některé textury vyžadují OptiFine pro správné zobrazení',
+						'OptiFine si můžete stáhnout na optifine.net/downloads',
+						'Nainstalujte OptiFine pro nejlepší herní zážitek',
+					],
+				},
+				{
+					title: 'Řešení problémů',
 					content: [
 						'Smažte server ze seznamu a přidejte znovu',
 						'Vymažte složku .minecraft/server-resource-packs',
 						'Restartujte Minecraft',
-						'Kontaktujte podporu na Discordu',
+						'Zkontrolujte zda máte povolený resource pack v nastavení serveru',
+						'V případě přetrvávajících problémů kontaktujte podporu na Discordu',
 					],
 				},
 			],
@@ -68,6 +85,10 @@
 						'Sledujte čas vaření pomocí hodin',
 						'Po uvaření vytáhněte alkohol',
 					],
+					images: [
+						{ src: '/alko1.webp', alt: '' },
+						{ src: '/alko2.webp', alt: '' },
+					],
 				},
 				{
 					title: 'Destilování',
@@ -77,6 +98,7 @@
 						'Počkejte na dokončení procesu',
 						'Čím déle destilujete, tím lepší kvalita',
 					],
+					images: [{ src: '/alko3.webp', alt: '' }],
 				},
 				{
 					title: 'Zrání v sudu',
@@ -87,6 +109,7 @@
 						'Pro skladování používejte truhly, ne sudy',
 						'Všechny recepty najdete v /kit brew',
 					],
+					images: [{ src: '/alko4.webp', alt: '' }],
 				},
 			],
 		},
@@ -303,9 +326,11 @@
 					<div v-show="section.title === 'Jak použít' || isSectionOpen(section.title)" class="p-6 pt-0">
 						<ul v-if="Array.isArray(section.content)" class="space-y-2">
 							<li v-for="item in section.content" :key="item" class="flex items-center gap-2">
-								<Icon name="lucide:check" class="w-5 h-5 text-primary flex-shrink-0" />
-								<span>{{ item }}</span>
+								<Icon name="lucide:check" class="w-5 h-5 text-primary flex-shrink-0" /> <span>{{ item }}</span>
 							</li>
+							<div v-if="section.images" class="flex flex-col justify-center items-center space-y-8">
+								<NuxtImg v-for="img in section.images" :key="img.src" :src="img.src" :alt="img.alt" class="w-fit" />
+							</div>
 						</ul>
 						<p v-else>{{ section.content }}</p>
 					</div>
