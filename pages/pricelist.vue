@@ -31,9 +31,9 @@
 </script>
 
 <template>
-	<section class="min-h-screen px-4 pt-20 pb-32 sm:px-6 lg:px-8 lg:py-32">
+	<section class="min-h-screen px-4 py-32 sm:px-6 lg:px-8">
 		<header class="text-center mb-8 lg:mb-12">
-			<h1 class="text-4xl font-bold text-primary md:text-5xl lg:text-6xl">Slimefun Ceník</h1>
+			<h1 class="text-5xl font-bold text-primary md:text-6xl">Slimefun Ceník</h1>
 		</header>
 
 		<div class="relative max-w-4xl mx-auto">
