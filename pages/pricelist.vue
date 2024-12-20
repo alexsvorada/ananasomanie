@@ -23,6 +23,8 @@
 	} = usePriceList()
 
 	const isMobileNavOpen = ref(false)
+	const isRulesOpen = ref(false)
+
 	const toggleMobileNav = () => {
 		isMobileNavOpen.value = !isMobileNavOpen.value
 	}
@@ -37,6 +39,14 @@
 		<div class="relative max-w-4xl mx-auto">
 			<nav
 				class="hidden lg:block absolute right-full mr-12 w-[280px] rounded-xl border border-white/10 bg-dark/75 backdrop-blur-sm">
+				<!-- Rules Button -->
+				<button
+					@click="isRulesOpen = true"
+					class="w-full p-4 border-b border-white/10 flex items-center gap-3 hover:bg-white/5 transition-colors">
+					<Icon name="lucide:book-open" class="w-5 h-5 text-primary" />
+					<span class="font-medium">Pravidla ceníku</span>
+				</button>
+
 				<div class="p-4 border-b border-white/10">
 					<div class="relative">
 						<input
@@ -160,33 +170,101 @@
 			leave-active-class="transition-transform duration-200 ease-in"
 			leave-from-class="translate-y-0"
 			leave-to-class="translate-y-full">
-			<nav v-show="isMobileNavOpen" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-dark border-t border-white/10 p-4">
-				<div class="grid grid-cols-2 gap-2 max-h-[40vh] overflow-y-auto custom-scrollbar">
-					<button
-						v-for="category in filteredCategories"
-						:key="category"
-						@click="
-							() => {
-								setActiveCategory(category)
-								isMobileNavOpen = false
-							}
-						"
-						class="p-3 rounded-lg border transition-all duration-300 flex items-center gap-2"
-						:class="[
-							isActiveCategory(category)
-								? 'bg-primary text-dark border-primary'
-								: 'border-white/10 bg-dark/75 backdrop-blur-sm hover:bg-white/10',
-						]">
-						<Icon name="lucide:package" class="w-5 h-5" />
-						<div class="flex-1">
-							<span class="font-medium text-sm">{{ getCategoryDisplayName(category) }}</span>
-							<span v-if="searchQuery && getMatchingItemsCount(category) > 0" class="text-xs block opacity-75">
-								{{ getMatchingItemsCount(category) }} položek
-							</span>
-						</div>
-					</button>
+			<nav v-show="isMobileNavOpen" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-dark border-t border-white/10">
+				<!-- Rules Button for Mobile -->
+				<button
+					@click="
+						() => {
+							isRulesOpen = true
+							isMobileNavOpen = false
+						}
+					"
+					class="w-full p-4 border-b border-white/10 flex items-center justify-center gap-2">
+					<Icon name="lucide:book-open" class="w-5 h-5 text-primary" />
+					<span class="font-medium">Pravidla ceníku</span>
+				</button>
+
+				<div class="p-4">
+					<div class="grid grid-cols-2 gap-2 max-h-[40vh] overflow-y-auto custom-scrollbar">
+						<button
+							v-for="category in filteredCategories"
+							:key="category"
+							@click="
+								() => {
+									setActiveCategory(category)
+									isMobileNavOpen = false
+								}
+							"
+							class="p-3 rounded-lg border transition-all duration-300 flex items-center gap-2"
+							:class="[
+								isActiveCategory(category)
+									? 'bg-primary text-dark border-primary'
+									: 'border-white/10 bg-dark/75 backdrop-blur-sm hover:bg-white/10',
+							]">
+							<Icon name="lucide:package" class="w-5 h-5" />
+							<div class="flex-1">
+								<span class="font-medium text-sm">{{ getCategoryDisplayName(category) }}</span>
+								<span v-if="searchQuery && getMatchingItemsCount(category) > 0" class="text-xs block opacity-75">
+									{{ getMatchingItemsCount(category) }} položek
+								</span>
+							</div>
+						</button>
+					</div>
 				</div>
 			</nav>
+		</Transition>
+
+		<!-- Rules Modal -->
+		<Transition
+			enter-active-class="transition duration-200 ease-out"
+			enter-from-class="opacity-0"
+			enter-to-class="opacity-100"
+			leave-active-class="transition duration-150 ease-in"
+			leave-from-class="opacity-100"
+			leave-to-class="opacity-0">
+			<div v-if="isRulesOpen" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-4">
+				<div
+					class="bg-dark border border-white/10 rounded-xl max-w-2xl w-full max-h-[80vh] overflow-y-auto custom-scrollbar"
+					@click.stop>
+					<div class="p-6 border-b border-white/10 flex items-center justify-between">
+						<h2 class="text-xl font-bold">Pravidla ceníku</h2>
+						<button
+							@click="isRulesOpen = false"
+							class="w-8 h-8 flex items-center justify-center rounded-lg hover:bg-white/5 text-gray-400 hover:text-white transition-colors">
+							<Icon name="lucide:x" class="w-5 h-5" />
+						</button>
+					</div>
+					<div class="p-6 space-y-4">
+						<div class="space-y-2">
+							<h3 class="font-bold text-primary">Základní pravidla</h3>
+							<ul class="space-y-2 text-gray-300">
+								<li>• Do ceníku spadají všechny SF itemy, stroje a enchanty.</li>
+								<li>• Vše zde napsané spadá pod přísný ceník a jakákoliv nižší cena bude potrestána.</li>
+								<li>• Vše spadá pod ceník s možnou 25% tolerancí.</li>
+								<li>• AT má právo zasáhnout, pokud se ceny zdají příliš nízké, a regulovat je.</li>
+							</ul>
+						</div>
+
+						<div class="space-y-2">
+							<h3 class="font-bold text-primary">Úpravy a návrhy</h3>
+							<p class="text-gray-300">
+								Máte-li návrh na rozumnou úpravu ceny, napište příkaz:<br />
+								<code class="bg-white/5 px-2 py-1 rounded">/mail send Ciment35KG</code> nebo
+								<code class="bg-white/5 px-2 py-1 rounded">DionysiusCasparu</code>, popřípadě na Discord.
+							</p>
+						</div>
+
+						<div class="space-y-2">
+							<h3 class="font-bold text-primary">Pravidla spolupráce</h3>
+							<ul class="space-y-2 text-gray-300">
+								<li>• Pokud chcete někomu pomoci se SF, můžete tak činit pouze na jeho pozemku.</li>
+								<li>• Veškeré věci od hráče nesmíte vynášet pryč ani používat pro vlastní účely.</li>
+								<li>• Předměty nesmíte držet v inventáři mimo pozemek daného hráče.</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 		</Transition>
 	</section>
 </template>

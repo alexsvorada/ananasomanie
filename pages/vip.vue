@@ -148,15 +148,7 @@
 					<h3 class="font-bold text-center text-sm sm:text-base">{{ tier.name }}</h3>
 				</button>
 			</div>
-			<div
-				class="mb-8 text-center p-4 bg-primary/10 rounded-lg border border-primary/20"
-				v-motion
-				:initial="{ opacity: 0, y: -20 }"
-				:visible-once="{
-					opacity: 1,
-					y: 0,
-					transition: { duration: 500 },
-				}">
+			<div class="mb-8 text-center p-4 bg-primary/10 rounded-lg border border-primary/20">
 				<p class="text-2xl font-bold">
 					{{ currentTier?.price.czk }}Kč / {{ currentTier?.price.eur }}€
 					<span class="text-gray-300 text-lg">za {{ currentTier?.price.duration }}</span>
@@ -164,15 +156,7 @@
 			</div>
 			<div class="grid md:grid-cols-2 gap-8">
 				<div class="space-y-8">
-					<div
-						v-motion
-						:initial="{ opacity: 0, y: 20 }"
-						:visible-once="{
-							opacity: 1,
-							y: 0,
-							transition: { duration: 500 },
-						}"
-						class="rounded-xl border border-white/10 bg-dark/50 p-6 backdrop-blur-sm">
+					<div class="rounded-xl border border-white/10 bg-dark/50 p-6 backdrop-blur-sm">
 						<h2 class="mb-4 text-xl font-bold flex items-center gap-2">
 							<Icon name="lucide:check-circle" class="text-primary w-6 h-6" />
 							Výhody
@@ -183,16 +167,7 @@
 							</li>
 						</ul>
 					</div>
-					<div
-						v-if="currentTier?.commands.length"
-						v-motion
-						:initial="{ opacity: 0, y: 20 }"
-						:visible-once="{
-							opacity: 1,
-							y: 0,
-							transition: { duration: 500, delay: 100 },
-						}"
-						class="rounded-xl border border-white/10 bg-dark/50 p-6 backdrop-blur-sm">
+					<div v-if="currentTier?.commands.length" class="rounded-xl border border-white/10 bg-dark/50 p-6 backdrop-blur-sm">
 						<h2 class="mb-4 text-xl font-bold flex items-center gap-2">
 							<Icon name="lucide:terminal" class="text-primary w-6 h-6" />
 							Příkazy
@@ -204,15 +179,7 @@
 						</ul>
 					</div>
 				</div>
-				<div
-					v-motion
-					:initial="{ opacity: 0, y: 20 }"
-					:visible-once="{
-						opacity: 1,
-						y: 0,
-						transition: { duration: 500, delay: 200 },
-					}"
-					class="rounded-xl border border-white/10 bg-dark/50 p-6 backdrop-blur-sm">
+				<div class="rounded-xl border border-white/10 bg-dark/50 p-6 backdrop-blur-sm">
 					<h2 class="mb-4 text-xl font-bold flex items-center gap-2">
 						<Icon name="lucide:circle-dollar-sign" class="text-primary w-6 h-6" />
 						Platební možnosti

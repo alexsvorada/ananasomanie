@@ -75,16 +75,6 @@
 						<div
 							v-for="(admin, index) in administrators"
 							:key="admin.name"
-							v-motion
-							:initial="{ opacity: 0, y: 20 }"
-							:visible-once="{
-								opacity: 1,
-								y: 0,
-								transition: {
-									delay: index * 100,
-									duration: 500,
-								},
-							}"
 							class="flex flex-col items-center p-6 transition-transform rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm hover:scale-105">
 							<img :src="admin.image" :alt="admin.name" class="w-32 h-32 mb-4 rounded-lg" loading="lazy" />
 							<p class="mb-2 text-lg font-bold text-primary">{{ admin.role }}</p>
@@ -99,10 +89,7 @@
 				:visible-once="{
 					opacity: 1,
 					y: 0,
-					transition: {
-						delay: 200,
-						duration: 500,
-					},
+					transition: { duration: 500 },
 				}">
 				<h2 class="mb-8 text-3xl font-bold text-center">🎮 Eventerky</h2>
 				<div class="grid gap-8 place-items-center">
@@ -110,16 +97,6 @@
 						<div
 							v-for="(eventer, index) in eventers"
 							:key="eventer.name"
-							v-motion
-							:initial="{ opacity: 0, y: 20 }"
-							:visible-once="{
-								opacity: 1,
-								y: 0,
-								transition: {
-									delay: index * 100 + 300,
-									duration: 500,
-								},
-							}"
 							class="flex flex-col items-center p-6 transition-transform rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm hover:scale-105">
 							<img :src="eventer.image" :alt="eventer.name" class="w-32 h-32 mb-4 rounded-lg" loading="lazy" />
 							<p class="mb-2 text-lg font-bold text-primary">{{ eventer.role }}</p>

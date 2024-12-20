@@ -10,7 +10,7 @@
 		{ image: '/economy.webp', title: 'Ekonomiku', alt: 'Economics Icon' },
 		{ image: '/heads.webp', title: 'Hlavy', alt: 'Bee Head Icon' },
 		{ image: '/slimefun.webp', title: 'Slimefun', alt: 'Slimefun Icon' },
-		{ image: '/skyBlock.webp', title: 'SkyBlock', alt: 'Skyblock Icon' },
+		{ image: '/skyblock.webp', title: 'SkyBlock', alt: 'Skyblock Icon' },
 		{ image: '/vehicle.webp', title: 'Vozidla', alt: 'Vehicle Icon' },
 		{ image: '/special.webp', title: 'Speciální předměty', alt: 'Special Item Icon' },
 		{ image: '/community.webp', title: 'Příjemnou komunitu', alt: 'Community Icon' },

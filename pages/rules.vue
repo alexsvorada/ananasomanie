@@ -79,16 +79,6 @@
 				<div
 					v-for="(rule, index) in rules"
 					:key="index"
-					v-motion
-					:initial="{ opacity: 0, y: 20 }"
-					:visible-once="{
-						opacity: 1,
-						y: 0,
-						transition: {
-							delay: index * 10,
-							duration: 500,
-						},
-					}"
 					class="bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:bg-white/10 transition-colors">
 					<div class="flex gap-4">
 						<span class="text-4xl">{{ rule.icon }}</span>
