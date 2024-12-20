@@ -8,6 +8,7 @@ export default defineNuxtConfig({
 		public: {
 			discordLink: '',
 			dynmapLink: '',
+			serverAddress: '',
 		},
 	},
 	app: {
