@@ -38,7 +38,7 @@ export default defineCachedEventHandler(
 		}
 	},
 	{
-		maxAge: 300,
+		maxAge: 1800,
 		name: 'craft-list-votes',
 		swr: true,
 		group: 'votes',
