@@ -45,8 +45,8 @@ export const useVote = () => {
 		isLoading.value = true
 		try {
 			const [craftListResponse, minecraftServeryResponse] = await Promise.all([
-				useFetch('/api/vote/craft-list'),
-				useFetch('/api/vote/minecraft-servery'),
+				useFetch<Voter[]>('/api/vote/craft-list'),
+				useFetch<Voter[]>('/api/vote/minecraft-servery'),
 			])
 
 			const craftListSite = votingSites.find((site) => site.name === 'Craftlist.org')

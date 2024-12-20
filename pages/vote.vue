@@ -5,72 +5,8 @@
 		description: 'Hlasování na MC Server listech',
 	})
 
-	interface Voter {
-		nickname: string
-		votes: number
-	}
-
-	interface VotingSite {
-		name: string
-		rating: Ref<string>
-		votes: Ref<string>
-		topVoters: Ref<Voter[]>
-		voteFunction: () => void
-	}
-
-	const nickname = ref<string>('')
-	const isLoading = ref(false)
-
-	const votingSites: VotingSite[] = [
-		{
-			name: 'MinecraftServery.eu',
-			rating: ref('??'),
-			votes: ref('??'),
-			topVoters: ref<Voter[]>([
-				{ nickname: 'DragonSlayer', votes: 45 },
-				{ nickname: 'BuildMaster', votes: 40 },
-				{ nickname: 'RedstoneWizard', votes: 36 },
-				{ nickname: 'DiamondMiner', votes: 32 },
-				{ nickname: 'CraftKing', votes: 29 },
-			]),
-			voteFunction: () => voteOnMinecraftServery(),
-		},
-		{
-			name: 'Craftlist.org',
-			rating: ref('??'),
-			votes: ref('??'),
-			topVoters: ref<Voter[]>([
-				{ nickname: 'DragonSlayer', votes: 45 },
-				{ nickname: 'BuildMaster', votes: 40 },
-				{ nickname: 'RedstoneWizard', votes: 36 },
-				{ nickname: 'DiamondMiner', votes: 32 },
-				{ nickname: 'CraftKing', votes: 29 },
-			]),
-			voteFunction: () => voteOnCraftList(),
-		},
-	]
-
-	onMounted(async () => {
-		try {
-			const { data: craftListData } = await useFetch('/api/vote/craft-list')
-
-			const { data: MinecraftServeryData } = await useFetch('/api/vote/minecraft-servery')
-		} catch (error) {
-			console.error('Error fetching vote data:', error)
-		} finally {
-			isLoading.value = false
-		}
-	})
-
-	const voteOnMinecraftServery = () => {
-		if (!nickname.value) return
-		window.open(`https://minecraftservery.eu/server/116/vote/${nickname.value}`, '_blank')
-	}
-
-	const voteOnCraftList = () => {
-		if (!nickname.value) return
-		window.open(`https://craftlist.org/ananaso-manie?nickname=${nickname.value}`, '_blank')
-	}
+	const { nickname, isLoading, votingSites, fetchVoteData } = useVote()
+	fetchVoteData()
 </script>
 
 <template>
@@ -106,11 +42,7 @@
 								Hlasovat
 							</button>
 						</div>
-						<div class="grid grid-cols-2 gap-4 mb-6">
-							<div class="text-center p-4 bg-white/5 rounded-lg">
-								<div class="text-gray-300 mb-1">Hodnocení</div>
-								<div class="text-2xl font-bold text-primary">{{ site.rating }}</div>
-							</div>
+						<div class="grid grid-cols-1 gap-4 mb-6">
 							<div class="text-center p-4 bg-white/5 rounded-lg">
 								<div class="text-gray-300 mb-1">Počet hlasů</div>
 								<div class="text-2xl font-bold text-primary">{{ site.votes }}</div>
