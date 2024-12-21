@@ -41,15 +41,7 @@
 						class="relative bg-primary text-dark font-bold h-12 px-8 rounded-lg transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed w-[260px] flex items-center justify-center gap-2 hover:bg-primary/90"
 						:aria-label="serverAddressWasCopied ? 'Adresa zkopírována' : 'Kopírovat adresu serveru'"
 						:aria-pressed="serverAddressWasCopied">
-						<Transition
-							enter-active-class="transition duration-200 ease-out"
-							enter-from-class="transform scale-95 opacity-0"
-							enter-to-class="transform scale-100 opacity-100"
-							leave-active-class="transition duration-150 ease-in"
-							leave-from-class="transform scale-100 opacity-100"
-							leave-to-class="transform scale-95 opacity-0">
-							<Tooltip v-show="serverAddressWasCopied" text="Skopírováno" />
-						</Transition>
+						<Tooltip v-show="serverAddressWasCopied" text="Skopírováno" />
 						<Icon :name="serverAddressWasCopied ? 'lucide:copy-check' : 'lucide:copy'" class="w-5 h-5" />
 						<span>{{ serverAddress }}</span>
 					</button>
@@ -59,23 +51,7 @@
 		<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 			<h2 class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-				<div
-					v-for="(feature, index) in features"
-					:key="index"
-					v-motion
-					:initial="{
-						opacity: 0,
-						y: 50,
-					}"
-					:visible-once="{
-						opacity: 1,
-						y: 0,
-						transition: {
-							delay: index * 10,
-							duration: 1000,
-						},
-					}"
-					class="feature bg-white/5 rounded-xl p-6">
+				<div v-for="(feature, index) in features" :key="index" class="feature bg-white/5 rounded-xl p-6">
 					<NuxtImg
 						loading="lazy"
 						format="webp"

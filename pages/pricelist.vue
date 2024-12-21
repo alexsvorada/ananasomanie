@@ -39,7 +39,6 @@
 		<div class="relative max-w-4xl mx-auto">
 			<nav
 				class="hidden lg:block absolute right-full mr-12 w-[280px] rounded-xl border border-white/10 bg-dark/75 backdrop-blur-sm">
-				<!-- Rules Button -->
 				<button
 					@click="isRulesOpen = true"
 					class="w-full p-4 border-b border-white/10 flex items-center gap-3 hover:bg-white/5 transition-colors">
@@ -150,7 +149,6 @@
 				</template>
 
 				<div v-else class="text-center p-8 lg:p-12 rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm">
-					<Icon name="lucide:shopping-cart" class="w-10 h-10 lg:w-12 lg:h-12 mx-auto mb-4 text-gray-400" />
 					<h3 class="text-lg lg:text-xl font-bold mb-2">Vyberte kategorii</h3>
 					<p class="text-gray-400">Zvolte kategorii ze seznamu pro zobrazení položek</p>
 				</div>
@@ -171,7 +169,6 @@
 			leave-from-class="translate-y-0"
 			leave-to-class="translate-y-full">
 			<nav v-show="isMobileNavOpen" class="lg:hidden fixed bottom-0 left-0 right-0 z-40 bg-dark border-t border-white/10">
-				<!-- Rules Button for Mobile -->
 				<button
 					@click="
 						() => {
@@ -214,7 +211,6 @@
 			</nav>
 		</Transition>
 
-		<!-- Rules Modal -->
 		<Transition
 			enter-active-class="transition duration-200 ease-out"
 			enter-from-class="opacity-0"

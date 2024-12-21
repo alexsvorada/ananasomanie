@@ -9,5 +9,5 @@
 		densities="x1 x2"
 		placeholder
 		preload
-		class="absolute w-full inset-0 bg-cover bg-center blur-lg shadow-2xl" />
+		class="absolute w-full h-full inset-0 bg-cover bg-center blur-lg shadow-2xl" />
 </template>

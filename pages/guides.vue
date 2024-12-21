@@ -152,13 +152,10 @@
 				</button>
 			</div>
 
-			<!-- RGB Generator -->
 			<div v-if="selectedTab === 'RGB Generátor'" class="mb-12">
 				<div class="rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm overflow-hidden">
 					<div class="p-6 grid grid-cols-1 lg:grid-cols-2 gap-8 min-h-[22rem]">
-						<!-- Left Column (Text Input & Preview) -->
 						<div class="space-y-6">
-							<!-- Text Input Section -->
 							<div>
 								<div class="flex items-center justify-between mb-4">
 									<h3 class="text-xl font-bold flex items-center gap-2">
@@ -220,16 +217,8 @@
 									<button
 										@click="copyCodeToClipboard(generatedCode)"
 										:disabled="!text"
-										class="relative px-3 py-1.5 rounded-lg border border-primary text-primary disabled:opacity-50 disabled:cursor-not-allowed hover:bg-primary/10 transition-colors flex items-center gap-2">
-										<Transition
-											enter-active-class="transition duration-200 ease-out"
-											enter-from-class="transform scale-95 opacity-0"
-											enter-to-class="transform scale-100 opacity-100"
-											leave-active-class="transition duration-150 ease-in"
-											leave-from-class="transform scale-100 opacity-100"
-											leave-to-class="transform scale-95 opacity-0">
-											<Tooltip v-show="generatedCodeWasCopied" text="Skopírováno" />
-										</Transition>
+										class="relative px-3 py-1.5 rounded-lg border border-primary text-primary disabled:opacity-50 disabled:cursor-not-allowed enabled:hover:bg-primary/10 transition-colors flex items-center gap-2">
+										<Tooltip v-show="generatedCodeWasCopied" text="Skopírováno" />
 										<Icon :name="generatedCodeWasCopied ? 'lucide:copy-check' : 'lucide:copy'" class="w-4 h-4" />
 										<span class="text-sm font-medium">Kopírovat vygenerovaný kód</span>
 									</button>
@@ -256,7 +245,6 @@
 							</div>
 						</div>
 
-						<!-- Right Column (Colors) -->
 						<div>
 							<div class="flex items-center justify-between mb-4">
 								<h3 class="text-xl font-bold flex items-center gap-2">
@@ -273,7 +261,7 @@
 							</div>
 
 							<div class="space-y-4">
-								<div v-for="(color, index) in colors" :key="index" class="relative">
+								<div v-for="(_, index) in colors" :key="index" class="relative">
 									<div class="flex items-center rounded-lg border border-white/10 bg-dark/50">
 										<input
 											v-model="colors[index]"
@@ -301,13 +289,11 @@
 				</div>
 			</div>
 
-			<!-- Guide Content -->
 			<div v-if="currentGuide" class="space-y-4">
 				<div
 					v-for="section in currentGuide.sections"
 					:key="section.title"
 					class="rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm overflow-hidden">
-					<!-- Section Header -->
 					<button
 						@click="section.title !== 'Jak použít' && toggleSection(section.title)"
 						class="w-full p-6 flex items-center justify-between text-left transition-colors"
@@ -322,7 +308,6 @@
 							class="w-6 h-6 transition-transform" />
 					</button>
 
-					<!-- Section Content -->
 					<div v-show="section.title === 'Jak použít' || isSectionOpen(section.title)" class="p-6 pt-0">
 						<ul v-if="Array.isArray(section.content)" class="space-y-2">
 							<li v-for="item in section.content" :key="item" class="flex items-center gap-2">

@@ -5,7 +5,7 @@
 		description: 'Detaily pro koupi VIP',
 	})
 
-	interface VIPTier {
+	interface Tier {
 		name: string
 		image: string
 		benefits: string[]
@@ -13,11 +13,11 @@
 		price: {
 			czk: number
 			eur: number
-			duration: string
+			duration?: string
 		}
 	}
 
-	const vipTiers: VIPTier[] = [
+	const tiers: Tier[] = [
 		{
 			name: 'VIP',
 			image: '/vip.webp',
@@ -111,19 +111,19 @@
 			image: '/keys.webp',
 			benefits: ['🔑 3 klíče k PREMIUM-CRATE'],
 			commands: [],
-			price: { czk: 30, eur: 1.2, duration: 'jednorázově' },
+			price: { czk: 30, eur: 1.2 },
 		},
 		{
 			name: 'Peníze',
 			image: '/money.webp',
 			benefits: ['💰 60.000 herních peněz'],
 			commands: [],
-			price: { czk: 30, eur: 1.2, duration: 'jednorázově' },
+			price: { czk: 30, eur: 1.2 },
 		},
 	]
 
 	const selectedTier = ref<string>('VIP')
-	const currentTier = computed(() => vipTiers.find((t) => t.name === selectedTier.value))
+	const currentTier = computed(() => tiers.find((t) => t.name === selectedTier.value))
 </script>
 
 <template>
@@ -135,7 +135,7 @@
 			</header>
 			<div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
 				<button
-					v-for="tier in vipTiers"
+					v-for="tier in tiers"
 					:key="tier.name"
 					@click="selectedTier = tier.name"
 					class="p-4 rounded-xl border border-white/10 bg-dark/50 backdrop-blur-sm transition-all duration-300"
@@ -151,7 +151,9 @@
 			<div class="mb-8 text-center p-4 bg-primary/10 rounded-lg border border-primary/20">
 				<p class="text-2xl font-bold">
 					{{ currentTier?.price.czk }}Kč / {{ currentTier?.price.eur }}€
-					<span class="text-gray-300 text-lg">za {{ currentTier?.price.duration }}</span>
+					<span class="text-gray-300 text-lg">
+						{{ currentTier?.price.duration ? `za ${currentTier.price.duration}` : 'jednorázově' }}
+					</span>
 				</p>
 			</div>
 			<div class="grid md:grid-cols-2 gap-8">

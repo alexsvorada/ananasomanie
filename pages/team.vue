@@ -60,15 +60,7 @@
 				<h1 class="mb-4 text-5xl font-bold text-primary md:text-6xl">Admin-Team</h1>
 				<p class="text-xl text-gray-300 md:text-2xl">Seznamte se s našim týmem</p>
 			</header>
-			<div
-				class="mb-16"
-				v-motion
-				:initial="{ opacity: 0, y: 20 }"
-				:visible-once="{
-					opacity: 1,
-					y: 0,
-					transition: { duration: 500 },
-				}">
+			<div class="mb-16">
 				<h2 class="mb-8 text-3xl font-bold text-center">👑 Administrátoři</h2>
 				<div class="grid gap-8 place-items-center">
 					<div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 place-items-center">
@@ -83,14 +75,7 @@
 					</div>
 				</div>
 			</div>
-			<div
-				v-motion
-				:initial="{ opacity: 0, y: 20 }"
-				:visible-once="{
-					opacity: 1,
-					y: 0,
-					transition: { duration: 500 },
-				}">
+			<div>
 				<h2 class="mb-8 text-3xl font-bold text-center">🎮 Eventerky</h2>
 				<div class="grid gap-8 place-items-center">
 					<div class="grid gap-8 sm:grid-cols-2 place-items-center">
