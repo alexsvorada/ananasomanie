@@ -23,8 +23,18 @@
 
 <template>
 	<div>
-		<BackgroundImage />
-		<header class="min-h-screen flex items-center justify-center">
+		<header class="min-h-screen flex items-center justify-center relative">
+			<NuxtImg
+				src="/bg.webp"
+				alt="Blurred christmas village background image"
+				loading="eager"
+				format="webp"
+				quality="20"
+				densities="x1 x2"
+				placeholder
+				preload
+				class="absolute w-full h-full inset-0 object-cover blur-md" />
+
 			<div class="z-10 text-center flex flex-col items-center">
 				<NuxtImg class="h-32" src="/logo.svg" alt="Logo" aria-label="Ananaso-Manie logo" />
 				<h1 class="text-5xl md:text-6xl font-bold text-primary mt-16 mb-4">Vítej na našem serveru</h1>
@@ -48,6 +58,7 @@
 				</div>
 			</div>
 		</header>
+
 		<section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
 			<h2 class="text-4xl font-bold text-center mb-12">Co u nás najdeš?</h2>
 			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
